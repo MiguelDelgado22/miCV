@@ -17,7 +17,6 @@ extension ExperienceViewController: UITableViewDataSource {
         else {
             return UITableViewCell()
         }
-    
         cell.updateUI(infoExperience: experience)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.backgroundColor = UIColor.clear

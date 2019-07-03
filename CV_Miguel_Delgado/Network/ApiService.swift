@@ -39,4 +39,27 @@ class ApiService: ApiServiceProtocol {
             }.resume()
         }
     }
+    
+    func downloadImage( with router: URLSessionTask, urlDownload: URL, completionHandler:@escaping(_ response: ApiServiceState) -> Void){
+        router.dataTask(with: urlDownload) { (data, response, error) in
+            if let response = response as? HTTPURLResponse, let data = data{
+                if response.statusCode == NSURLErrorNotConnectedToInternet {
+                    completionHandler(.notFound(reason: NSLocalizedString(NetworkError.notConnection.rawValue, comment: "")))
+                }
+                
+                switch(response.statusCode){
+                     case (HttpStatusCode.OK.rawValue ..< HttpStatusCode.OKFULL.rawValue):
+                        completionHandler(.success(response: data))
+                    break
+                default:
+                    completionHandler(.fatal(reason: NSLocalizedString(NetworkError.unexpected.rawValue, comment: "")))
+                    break
+                }
+                
+            } else {
+                completionHandler(.notFound(reason: response.debugDescription))
+            }
+        }.resume()
+    }
+    
 }
