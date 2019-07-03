@@ -15,10 +15,6 @@ protocol ApiServiceProtocol{
 
 class ApiService: ApiServiceProtocol{
     
-    init() {
-        
-    }
-    
     func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void){
         
         if let url = URL(string: URLPrincipal.urlPrincipal.rawValue){

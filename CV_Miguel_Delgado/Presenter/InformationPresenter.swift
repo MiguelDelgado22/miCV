@@ -25,7 +25,7 @@ class InformationPresenter{
     }
     
     func myInformation(){
-        InfoHelpers().myInfo { (responseData) in
+        InfoHelper().myInfo { (responseData) in
             switch responseData{
             case .success(let dataResponse):
                 let myInfo = try! JSONDecoder().decode(InformationResponseModel.self, from: dataResponse)

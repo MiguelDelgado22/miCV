@@ -30,9 +30,9 @@
 		C7FD562322C56477005CC59D /* CV_Miguel_DelgadoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD562222C56477005CC59D /* CV_Miguel_DelgadoTests.swift */; };
 		C7FD562D22C57BA0005CC59D /* InformationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD562C22C57BA0005CC59D /* InformationExtension.swift */; };
 		C7FD563422C57C6B005CC59D /* ExperienceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563322C57C6B005CC59D /* ExperienceExtension.swift */; };
-		C7FD563922C5902A005CC59D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563822C5902A005CC59D /* Network.swift */; };
+		C7FD563922C5902A005CC59D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563822C5902A005CC59D /* ApiService.swift */; };
 		C7FD563B22C5D18C005CC59D /* ProtocolNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563A22C5D18C005CC59D /* ProtocolNetwork.swift */; };
-		C7FD564022C5EA74005CC59D /* InfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563F22C5EA74005CC59D /* InfoHelpers.swift */; };
+		C7FD564022C5EA74005CC59D /* InfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563F22C5EA74005CC59D /* InfoHelper.swift */; };
 		C7FD564F22C6BE72005CC59D /* MockConnectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564622C6B665005CC59D /* MockConnectionTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,9 +86,9 @@
 		C7FD562422C56477005CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FD562C22C57BA0005CC59D /* InformationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationExtension.swift; sourceTree = "<group>"; };
 		C7FD563322C57C6B005CC59D /* ExperienceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceExtension.swift; sourceTree = "<group>"; };
-		C7FD563822C5902A005CC59D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C7FD563822C5902A005CC59D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C7FD563A22C5D18C005CC59D /* ProtocolNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolNetwork.swift; sourceTree = "<group>"; };
-		C7FD563F22C5EA74005CC59D /* InfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHelpers.swift; sourceTree = "<group>"; };
+		C7FD563F22C5EA74005CC59D /* InfoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHelper.swift; sourceTree = "<group>"; };
 		C7FD564622C6B665005CC59D /* MockConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnectionTest.swift; sourceTree = "<group>"; };
 		C7FD564822C6B78B005CC59D /* MockConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,7 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FD564822C6B78B005CC59D /* MockConnection.swift */,
-				C7FD563822C5902A005CC59D /* Network.swift */,
+				C7FD563822C5902A005CC59D /* ApiService.swift */,
 				C7FD563A22C5D18C005CC59D /* ProtocolNetwork.swift */,
 			);
 			path = Network;
@@ -312,7 +312,7 @@
 		C7FD563E22C5EA61005CC59D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				C7FD563F22C5EA74005CC59D /* InfoHelpers.swift */,
+				C7FD563F22C5EA74005CC59D /* InfoHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -465,10 +465,10 @@
 				C76B182922C4248A00D8D2CD /* ExperiencePresenter.swift in Sources */,
 				C760D79B22C6C98B008845F4 /* MockConnection.swift in Sources */,
 				C7FD562D22C57BA0005CC59D /* InformationExtension.swift in Sources */,
-				C7FD564022C5EA74005CC59D /* InfoHelpers.swift in Sources */,
+				C7FD564022C5EA74005CC59D /* InfoHelper.swift in Sources */,
 				C76B17F422C3EEE900D8D2CD /* InformationViewController.swift in Sources */,
 				C76B17FD22C3F1D600D8D2CD /* InformationPresenter.swift in Sources */,
-				C7FD563922C5902A005CC59D /* Network.swift in Sources */,
+				C7FD563922C5902A005CC59D /* ApiService.swift in Sources */,
 				C76B180722C417BA00D8D2CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

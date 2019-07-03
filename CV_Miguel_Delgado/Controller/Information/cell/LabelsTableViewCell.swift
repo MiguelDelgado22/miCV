@@ -16,18 +16,7 @@ class LabelsTableViewCell: UITableViewCell {
     @IBOutlet weak var lbEmail: UILabel?
     @IBOutlet weak var lbBirthday: UILabel?
     @IBOutlet weak var lbObjective: UILabel?
-    
-    
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
     func updateUI(responseInformation: InformationResponseModel?){
         lbName?.text = responseInformation?.name
         lbCity?.text = responseInformation?.city
