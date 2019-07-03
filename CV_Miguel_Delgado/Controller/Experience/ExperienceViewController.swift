@@ -18,11 +18,14 @@ class ExperienceViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       configText()
+       guard let tbcontenedor = tbContenedor else {
+            return
+        }
+        configText()
         self.presenterExperience = ExperiencePresenter(delegate: self)
-        tbContenedor?.delegate = self
-        tbContenedor?.dataSource = self
-
+        tbcontenedor.delegate = self
+        tbcontenedor.dataSource = self
+        tbcontenedor.register(UINib(nibName: NameOfCells.viewExperience.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewExperience.rawValue )
     }
 
     func configText() {

@@ -19,10 +19,15 @@ class InformationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configText()
+        guard let tbContainer = tbContainer else {
+            return
+        }
+        
         self.presenterInformation = InformationPresenter(delegate: self)
         presenterInformation?.myInformation()
-        tbContainer?.delegate = self
-        tbContainer?.dataSource = self
+         tbContainer.register(UINib(nibName: NameOfCells.viewControllerInformations.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformations.rawValue )
+        tbContainer.delegate = self
+        tbContainer.dataSource = self
     }
     
     func configText() {

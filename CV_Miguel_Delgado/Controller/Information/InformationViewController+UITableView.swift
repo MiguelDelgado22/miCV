@@ -7,9 +7,12 @@ extension InformationViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = LabelsTableViewCell()
-        tableView.register(UINib(nibName: NameOfCells.viewControllerInformations.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformations.rawValue )
-        cell = tableView.dequeueReusableCell(withIdentifier: NameOfCells.viewControllerInformations.rawValue, for: indexPath) as! LabelsTableViewCell
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NameOfCells.viewControllerInformations.rawValue, for: indexPath) as? LabelsTableViewCell
+            else {
+                return UITableViewCell()
+        }
+
         cell.updateUI(responseInformation: responseInfo)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.backgroundColor = UIColor.clear

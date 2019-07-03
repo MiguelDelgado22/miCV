@@ -10,7 +10,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    var contentView: UIImageView!
+    var contentView: UIImageView?
     var labelTitulo: UILabel?
 
     @IBInspectable var TitleViewController: String?
@@ -25,18 +25,24 @@ class BaseViewController: UIViewController {
         let positionXY = BaseData.positionXYcontentView.rawValue
 
         let imageBackground = UIImage(named: NameOfImage.IMG_BACKGROUND_SCREEN.rawValue)
-        contentView = UIImageView(image: imageBackground)
-        contentView?.alpha = CGFloat(BaseData.alphaNum.rawValue)
-        contentView?.frame = CGRect(x: CGFloat(positionXY), y: CGFloat(positionXY), width: screenSize.width, height: screenSize.height)
-         labelTitulo = UILabel.init(frame: CGRect.init(x: BaseData.positionXYcontentView.rawValue, y: BaseData.labelPositionY.rawValue, width: Double(screenSize.size.width), height: BaseData.labelPositionHeigth.rawValue))
-        labelTitulo?.layoutIfNeeded()
-        labelTitulo?.textColor = UIColor.black
-        labelTitulo?.textAlignment = .center
-        labelTitulo?.backgroundColor = UIColor.clear
-        labelTitulo?.font = UIFont.boldSystemFont(ofSize: CGFloat(SizeFont.fontBase.rawValue))
-        labelTitulo?.text = TitleViewController
-
-        self.view.insertSubview(contentView, at: TableInformationViewData.numeroOfOptional.rawValue)
-        self.view.addSubview(labelTitulo!)
+        
+         contentView = UIImageView(image: imageBackground)
+        labelTitulo = UILabel.init(frame: CGRect.init(x: BaseData.positionXYcontentView.rawValue, y: BaseData.labelPositionY.rawValue, width: Double(screenSize.size.width), height: BaseData.labelPositionHeigth.rawValue))
+        
+        if let content = contentView, let title = labelTitulo{
+        
+        content.alpha = CGFloat(BaseData.alphaNum.rawValue)
+        content.frame = CGRect(x: CGFloat(positionXY), y: CGFloat(positionXY), width: screenSize.width, height: screenSize.height)
+        
+         
+        title.layoutIfNeeded()
+        title.textColor = UIColor.black
+        title.textAlignment = .center
+        title.backgroundColor = UIColor.clear
+        title.font = UIFont.boldSystemFont(ofSize: CGFloat(SizeFont.fontBase.rawValue))
+        title.text = TitleViewController
+        self.view.insertSubview(content, at: TableInformationViewData.numeroOfOptional.rawValue)
+        self.view.addSubview(title)
+        }
     }
 }

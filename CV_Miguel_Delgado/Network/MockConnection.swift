@@ -27,8 +27,10 @@ class MockConnection: MockConnectionProtocol {
 
         if let path = Bundle.main.path(forResource: "Information", ofType: "json") {
             do {
-                let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                
+                if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe){
                 completionHandler(.success(response: data))
+                }
             }
         }
     }

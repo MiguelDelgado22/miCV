@@ -27,8 +27,9 @@ class InformationPresenter {
         InfoHelper().myInfo { (responseData) in
             switch responseData {
             case .success(let dataResponse):
-                let myInfo = try! JSONDecoder().decode(InformationResponseModel.self, from: dataResponse)
+                if let myInfo = try? JSONDecoder().decode(InformationResponseModel.self, from: dataResponse){
                  self.delegate?.informationPersonal(response: myInfo)
+                }
                 break
             case .fatal:
                 self.delegate?.errorInWebServices(error: AlertError.again.rawValue)
