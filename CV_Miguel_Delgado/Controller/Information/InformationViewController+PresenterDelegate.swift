@@ -11,8 +11,7 @@ extension InformationViewController: InformationPresenterDelegate {
     }
     
     func informationPersonal(response: InformationResponseModel) {
-        responseInfo = response
-        pastDataOfNextTab()
+        presenterInformation?.responseInfo = response
         DispatchQueue.main.async {
             self.tbContainer?.reloadData()
         }

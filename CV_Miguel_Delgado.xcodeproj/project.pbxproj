@@ -39,6 +39,7 @@
 		DB1D88A122CD2A92008E73AD /* ExtensionViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */; };
 		DB1D88A322CD2B08008E73AD /* InformationViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A222CD2B08008E73AD /* InformationViewController+UITableView.swift */; };
 		DB1D88A522CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A422CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift */; };
+		DBFF1C6F22CD62BD00116CAF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF1C6E22CD62BD00116CAF /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionViewController+UITableView.swift"; sourceTree = "<group>"; };
 		DB1D88A222CD2B08008E73AD /* InformationViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InformationViewController+UITableView.swift"; sourceTree = "<group>"; };
 		DB1D88A422CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InformationViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
+		DBFF1C6E22CD62BD00116CAF /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		C76B17F122C3EB1300D8D2CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DBFF1C6D22CD628E00116CAF /* NavigationConntroller */,
 				C76B182422C4228200D8D2CD /* Experience */,
 				C76B17F222C3EEC000D8D2CD /* Information */,
 			);
@@ -346,6 +349,14 @@
 				C7FD563F22C5EA74005CC59D /* InfoHelper.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DBFF1C6D22CD628E00116CAF /* NavigationConntroller */ = {
+			isa = PBXGroup;
+			children = (
+				DBFF1C6E22CD62BD00116CAF /* NavigationController.swift */,
+			);
+			path = NavigationConntroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +511,7 @@
 				C76B17F422C3EEE900D8D2CD /* InformationViewController.swift in Sources */,
 				C76B17FD22C3F1D600D8D2CD /* InformationPresenter.swift in Sources */,
 				C7FD563922C5902A005CC59D /* ApiService.swift in Sources */,
+				DBFF1C6F22CD62BD00116CAF /* NavigationController.swift in Sources */,
 				36E8C80422CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift in Sources */,
 				C76B180722C417BA00D8D2CD /* Constants.swift in Sources */,
 			);

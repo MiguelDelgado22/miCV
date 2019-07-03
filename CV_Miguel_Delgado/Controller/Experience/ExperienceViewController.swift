@@ -11,24 +11,26 @@ import UIKit
 class ExperienceViewController: BaseViewController {
 
     @IBOutlet weak var tbContenedor: UITableView?
-
-    private var presenterExperience: ExperiencePresenter?
-
-    var infoExperience: [Experience]?
-
+    var presenterExperience: ExperiencePresenter? {
+        didSet {
+            self.presenterExperience?.infoExperience = (self.navigationController?.viewControllers.first as? InformationViewController)?.presenterInformation?.responseInfo?.experience
+            print(self.presenterExperience)
+            self.tbContenedor?.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        guard let tbcontenedor = tbContenedor else {
             return
         }
-        configText()
-        self.presenterExperience = ExperiencePresenter(delegate: self)
+        
+        tbcontenedor.register(UINib(nibName: NameOfCells.viewExperience.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewExperience.rawValue )
+        
         tbcontenedor.delegate = self
         tbcontenedor.dataSource = self
-        tbcontenedor.register(UINib(nibName: NameOfCells.viewExperience.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewExperience.rawValue )
-    }
+    navigationItem.title = NSLocalizedString(Title.experience.rawValue, comment: "")
+        
 
-    func configText() {
-         labelTitulo?.text  = NSLocalizedString(Title.experience.rawValue, comment: "")
     }
 }

@@ -8,12 +8,12 @@ extension ExperienceViewController: UITableViewDelegate  {
 
 extension ExperienceViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return infoExperience?.count ?? TableInformationViewData.numeroOfOptional.rawValue
+        return presenterExperience?.infoExperience?.count ?? TableInformationViewData.numeroOfOptional.rawValue
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NameOfCells.viewExperience.rawValue, for: indexPath) as?  ExperienceTableViewCell,
-            let experience = infoExperience?[indexPath.row]
+            let experience = presenterExperience?.infoExperience?[indexPath.row]
         else {
             return UITableViewCell()
         }

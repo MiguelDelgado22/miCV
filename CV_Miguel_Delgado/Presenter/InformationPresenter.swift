@@ -9,13 +9,9 @@
 import Foundation
 
 class InformationPresenter {
-
-    weak private var delegate: InformationPresenterDelegate?
-
-    init(delegate: InformationPresenterDelegate) {
-        self.delegate = delegate
-    }
-
+    weak var delegate: InformationPresenterDelegate?
+    var responseInfo: InformationResponseModel?
+    
     func myInformation() {
         InfoHelper().myInfo { (responseData) in
             switch responseData {
@@ -31,7 +27,5 @@ class InformationPresenter {
                 self.delegate?.errorNotFound(error: AlertError.notInternet.rawValue)
             }
         }
-
     }
-
 }
