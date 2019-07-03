@@ -8,11 +8,6 @@
 
 import Foundation
 
-protocol MockConnectionProtocol: ApiServiceProtocol {
-    func successTest(completionHandler: @escaping (ApiServiceState) -> Void)
-    func failTest(completionHandler: @escaping (ApiServiceState) -> Void)
-}
-
 protocol ApiServiceProtocol {
     func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void)
 }

@@ -6,6 +6,7 @@
 //  Copyright © 2019 Miguel Angel Delgado Alcantara. All rights reserved.
 //
 import Foundation
+@testable import CV_Miguel_Delgado
 
 class MockConnection: MockConnectionProtocol {
     func successTest(completionHandler: @escaping (ApiServiceState) -> Void) {

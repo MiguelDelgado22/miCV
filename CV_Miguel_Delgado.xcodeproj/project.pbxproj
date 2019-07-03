@@ -10,7 +10,8 @@
 		36E8C7FC22CD26A700DF7891 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36E8C7FB22CD26A700DF7891 /* Localizable.strings */; };
 		36E8C80222CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80122CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift */; };
 		36E8C80422CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80322CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift */; };
-		C760D79B22C6C98B008845F4 /* MockConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564822C6B78B005CC59D /* MockConnection.swift */; };
+		36E8C80A22CD517D00DF7891 /* MockingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80922CD517D00DF7891 /* MockingProtocols.swift */; };
+		36E8C80B22CD524800DF7891 /* MockConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564822C6B78B005CC59D /* MockConnection.swift */; };
 		C76B17DC22C3E9CF00D8D2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B17DB22C3E9CF00D8D2CD /* AppDelegate.swift */; };
 		C76B17E322C3E9CF00D8D2CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B17E122C3E9CF00D8D2CD /* Main.storyboard */; };
 		C76B17E522C3E9CF00D8D2CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B17E422C3E9CF00D8D2CD /* Assets.xcassets */; };
@@ -62,6 +63,8 @@
 		36E8C7FE22CD47C500DF7891 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		36E8C80122CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsInformationPresenter.swift; sourceTree = "<group>"; };
 		36E8C80322CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsExperiencePresenter.swift; sourceTree = "<group>"; };
+		36E8C80822CD513700DF7891 /* FailInformation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FailInformation.json; sourceTree = "<group>"; };
+		36E8C80922CD517D00DF7891 /* MockingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingProtocols.swift; sourceTree = "<group>"; };
 		C76B17D822C3E9CF00D8D2CD /* CV_Miguel_Delgado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_Miguel_Delgado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B17DB22C3E9CF00D8D2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B17E222C3E9CF00D8D2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,13 +143,31 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		36E8C80622CD50F500DF7891 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD564822C6B78B005CC59D /* MockConnection.swift */,
+				36E8C80922CD517D00DF7891 /* MockingProtocols.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		36E8C80722CD510D00DF7891 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C76B17FF22C3F69300D8D2CD /* Information.json */,
+				36E8C80822CD513700DF7891 /* FailInformation.json */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		C76B17CF22C3E9CF00D8D2CD = {
 			isa = PBXGroup;
 			children = (
 				C76B183222C42E4700D8D2CD /* Readme.md */,
 				C76B17DA22C3E9CF00D8D2CD /* CV_Miguel_Delgado */,
-				C7FD561322C55D24005CC59D /* CV_Miguel_DelgadoUITests */,
 				C7FD562122C56477005CC59D /* CV_Miguel_DelgadoTests */,
+				C7FD561322C55D24005CC59D /* CV_Miguel_DelgadoUITests */,
 				C76B17D922C3E9CF00D8D2CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,7 +190,6 @@
 				C7FD562A22C57B53005CC59D /* Extension */,
 				C76B183422C4857500D8D2CD /* Custom */,
 				C76B180522C417A300D8D2CD /* Resources */,
-				C76B17FE22C3F65100D8D2CD /* Response */,
 				C76B17F122C3EB1300D8D2CD /* Controller */,
 				C76B17EF22C3EAF400D8D2CD /* Model */,
 				C76B17F022C3EB0600D8D2CD /* View */,
@@ -226,14 +246,6 @@
 				C76B17F922C3F1AE00D8D2CD /* LabelsTableViewCell.xib */,
 			);
 			path = cell;
-			sourceTree = "<group>";
-		};
-		C76B17FE22C3F65100D8D2CD /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				C76B17FF22C3F69300D8D2CD /* Information.json */,
-			);
-			path = Response;
 			sourceTree = "<group>";
 		};
 		C76B180522C417A300D8D2CD /* Resources */ = {
@@ -294,6 +306,8 @@
 		C7FD562122C56477005CC59D /* CV_Miguel_DelgadoTests */ = {
 			isa = PBXGroup;
 			children = (
+				36E8C80722CD510D00DF7891 /* Sources */,
+				36E8C80622CD50F500DF7891 /* Mocks */,
 				C7FD564622C6B665005CC59D /* MockConnectionTest.swift */,
 				C7FD562222C56477005CC59D /* CV_Miguel_DelgadoTests.swift */,
 				C7FD562422C56477005CC59D /* Info.plist */,
@@ -320,7 +334,6 @@
 		C7FD563522C58858005CC59D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				C7FD564822C6B78B005CC59D /* MockConnection.swift */,
 				C7FD563822C5902A005CC59D /* ApiService.swift */,
 				C7FD563A22C5D18C005CC59D /* NetworkProtocols.swift */,
 			);
@@ -483,7 +496,6 @@
 				C7FD563B22C5D18C005CC59D /* NetworkProtocols.swift in Sources */,
 				DB1D88A122CD2A92008E73AD /* ExtensionViewController+UITableView.swift in Sources */,
 				C76B182922C4248A00D8D2CD /* ExperiencePresenter.swift in Sources */,
-				C760D79B22C6C98B008845F4 /* MockConnection.swift in Sources */,
 				C7FD564022C5EA74005CC59D /* InfoHelper.swift in Sources */,
 				C76B17F422C3EEE900D8D2CD /* InformationViewController.swift in Sources */,
 				C76B17FD22C3F1D600D8D2CD /* InformationPresenter.swift in Sources */,
@@ -506,6 +518,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FD562322C56477005CC59D /* CV_Miguel_DelgadoTests.swift in Sources */,
+				36E8C80B22CD524800DF7891 /* MockConnection.swift in Sources */,
+				36E8C80A22CD517D00DF7891 /* MockingProtocols.swift in Sources */,
 				C7FD564F22C6BE72005CC59D /* MockConnectionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
