@@ -10,7 +10,8 @@ import Foundation
 
 class ExperiencePresenter {
     weak private var delegate: ExperiencePresenterDelegate?
-    init(delegate: ExperiencePresenterDelegate) {
-        self.delegate = delegate
+    var infoExperience: [Experience]?
+    
+    init() {
     }
 }
