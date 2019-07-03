@@ -34,6 +34,9 @@
 		C7FD563B22C5D18C005CC59D /* ProtocolNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563A22C5D18C005CC59D /* ProtocolNetwork.swift */; };
 		C7FD564022C5EA74005CC59D /* InfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563F22C5EA74005CC59D /* InfoHelper.swift */; };
 		C7FD564F22C6BE72005CC59D /* MockConnectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564622C6B665005CC59D /* MockConnectionTest.swift */; };
+		DB1D88A122CD2A92008E73AD /* ExtensionViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */; };
+		DB1D88A322CD2B08008E73AD /* InformationViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A222CD2B08008E73AD /* InformationViewController+UITableView.swift */; };
+		DB1D88A522CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A422CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		C7FD563F22C5EA74005CC59D /* InfoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHelper.swift; sourceTree = "<group>"; };
 		C7FD564622C6B665005CC59D /* MockConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnectionTest.swift; sourceTree = "<group>"; };
 		C7FD564822C6B78B005CC59D /* MockConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnection.swift; sourceTree = "<group>"; };
+		DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionViewController+UITableView.swift"; sourceTree = "<group>"; };
+		DB1D88A222CD2B08008E73AD /* InformationViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InformationViewController+UITableView.swift"; sourceTree = "<group>"; };
+		DB1D88A422CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InformationViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				C76B17F322C3EEE900D8D2CD /* InformationViewController.swift */,
+				DB1D88A222CD2B08008E73AD /* InformationViewController+UITableView.swift */,
+				DB1D88A422CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift */,
 				C76B17F722C3F13800D8D2CD /* cell */,
 			);
 			path = Information;
@@ -224,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				C76B182622C4232200D8D2CD /* ExperienceViewController.swift */,
+				DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */,
 				C76B182A22C425A100D8D2CD /* cell */,
 			);
 			path = Experience;
@@ -455,13 +464,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76B182722C4232200D8D2CD /* ExperienceViewController.swift in Sources */,
+				DB1D88A322CD2B08008E73AD /* InformationViewController+UITableView.swift in Sources */,
 				C76B182D22C425C500D8D2CD /* ExperienceTableViewCell.swift in Sources */,
 				C76B183622C4859A00D8D2CD /* BaseViewController.swift in Sources */,
 				C7FD563422C57C6B005CC59D /* ExperienceExtension.swift in Sources */,
+				DB1D88A522CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift in Sources */,
 				C76B17DC22C3E9CF00D8D2CD /* AppDelegate.swift in Sources */,
 				C76B180222C3FD0D00D8D2CD /* InformationResponseModel.swift in Sources */,
 				C76B17FA22C3F1AE00D8D2CD /* LabelsTableViewCell.swift in Sources */,
 				C7FD563B22C5D18C005CC59D /* ProtocolNetwork.swift in Sources */,
+				DB1D88A122CD2A92008E73AD /* ExtensionViewController+UITableView.swift in Sources */,
 				C76B182922C4248A00D8D2CD /* ExperiencePresenter.swift in Sources */,
 				C760D79B22C6C98B008845F4 /* MockConnection.swift in Sources */,
 				C7FD562D22C57BA0005CC59D /* InformationExtension.swift in Sources */,

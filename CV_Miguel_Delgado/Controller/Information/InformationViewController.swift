@@ -24,7 +24,15 @@ class InformationViewController: BaseViewController {
         tbContainer?.delegate = self
         tbContainer?.dataSource = self
     }
+    
     func configText() {
        labelTitulo?.text = NSLocalizedString("titulo", comment: "")
     }
+    
+    func pastDataOfNextTab() {
+        if let secondTab = self.tabBarController?.viewControllers?[1] as? ExperienceViewController {
+            secondTab.infoExperience = responseInfo?.experience
+        }
+    }
 }
+
