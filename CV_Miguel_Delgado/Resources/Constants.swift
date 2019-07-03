@@ -8,20 +8,24 @@
 
 import UIKit
 
+//MARK: - Strings for urls
 enum URLPrincipal: String {
     case urlPrincipal = "https://gist.githubusercontent.com/MiguelDelgado22/47dad348488891b1d5fba23b41b25b04/raw/0c139c35260824723a1b52df21f3a48447f62573/MyCV"
 }
 
+//MARK: - Strings for cell identifier
 enum NameOfCells: String {
     case viewControllerInformations = "LabelsTableViewCell"
     case viewExperience = "experienceTableViewCell"
 
 }
 
+//MARK: - String for images
 enum NameOfImage: String {
     case IMG_BACKGROUND_SCREEN = "background"
 }
 
+//MARK: - Values for tableview information
 enum TableInformationViewData: Int {
     case numeroOfOptional = 0
     case numerOfRowInSection = 1
@@ -29,6 +33,7 @@ enum TableInformationViewData: Int {
     case heightForRowAtExperience = 188
 }
 
+//MARK: - Values for a base positions
 enum BaseData: Double {
     case alphaNum = 0.5
     case positionXYcontentView = 0.0
@@ -38,10 +43,12 @@ enum BaseData: Double {
     case labelPositionHeigth = 63.0
 }
 
-enum sizeFont: Double {
+//MARK: - Values for size of fonts
+enum SizeFont: Double {
     case fontBase = 23.0
 }
 
+//MARK: - Status for api service
 enum ApiServiceState: Error {
     case network(error: Error)
     case notFound(reason: String)
@@ -49,17 +56,20 @@ enum ApiServiceState: Error {
     case success(response: Data)
 }
 
+//MARK: - Values for http status code response
 enum HttpStatusCode: Int {
     case OK = 200
     case OKFULL = 300
 }
 
+//MARK: - Status for download result
 enum DownloadResult {
     case success(data: Data)
     case notFound(error: String)
     case fatal(error: String)
 }
 
+//MARK: - Strings for alert controller
 enum AlertError: String {
     case error = "error"
     case acept = "ok"
@@ -67,11 +77,13 @@ enum AlertError: String {
     case notInternet = "notConnection"
 }
 
+//MARK: - Strings for titles
 enum Title: String {
     case information = "information"
     case experience = "experience"
 }
 
+//MARK: - Strings for network errors
 enum NetworkError: String {
     case notConnection = "notConnection"
     case unexpected = "unexpected"

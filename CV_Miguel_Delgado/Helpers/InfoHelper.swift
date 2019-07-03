@@ -9,7 +9,13 @@
 import Foundation
 
 class InfoHelper: NSObject {
-    //Download cambia el nombre
+    // MARK: My info method
+    /**
+     Get a DownloadResult
+     
+     - parameters:
+     - completionHandler: A closure that need be defined by the caller to manipulate the data
+     */
     func myInfo(completionHandler: @escaping(DownloadResult) -> Void) {
         ApiService().makeRequest(with: URLSession.shared) { (response) in
             switch response {
