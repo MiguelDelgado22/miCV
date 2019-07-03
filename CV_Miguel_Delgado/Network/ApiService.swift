@@ -8,23 +8,22 @@
 
 import Foundation
 
-protocol ApiServiceProtocol{
+protocol ApiServiceProtocol {
     func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void)
 }
 
+class ApiService: ApiServiceProtocol {
 
-class ApiService: ApiServiceProtocol{
-    
-    func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void){
-        
-        if let url = URL(string: URLPrincipal.urlPrincipal.rawValue){
-            router.dataTask(with: url) { (data, response, error) in
+    func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void) {
+
+        if let url = URL(string: URLPrincipal.urlPrincipal.rawValue) {
+            router.dataTask(with: url) { (data, response, _) in
                 if let response = response as? HTTPURLResponse, let data = data {
-                    if response.statusCode == NSURLErrorNotConnectedToInternet{
+                    if response.statusCode == NSURLErrorNotConnectedToInternet {
                         completionHandler(.notFound(reason: NSLocalizedString("No Internet", comment: "")))
                     }
-                    
-                    switch(response.statusCode){
+
+                    switch(response.statusCode) {
                     case (HttpStatusCode.OK.rawValue ..< HttpStatusCode.OKFULL.rawValue):
                         completionHandler(.success(response: data))
                         break
@@ -32,12 +31,10 @@ class ApiService: ApiServiceProtocol{
                         completionHandler(.fatal(reason: NSLocalizedString("Unexpected error", comment: "")))
                         break
                     }
-                }else{
+                } else {
                     completionHandler(.notFound(reason: response.debugDescription))
                 }
                 }.resume()
         }
     }
 }
-
-

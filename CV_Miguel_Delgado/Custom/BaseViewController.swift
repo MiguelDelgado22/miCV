@@ -9,21 +9,21 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    
+
     var contentView: UIImageView!
     var labelTitulo: UILabel?
-    
+
     @IBInspectable var TitleViewController: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configBase()
     }
-    
-    func configBase(){
+
+    func configBase() {
         let screenSize: CGRect = UIScreen.main.bounds
         let positionXY = BaseData.positionXYcontentView.rawValue
-        
+
         let imageBackground = UIImage(named: NameOfImage.IMG_BACKGROUND_SCREEN.rawValue)
         contentView = UIImageView(image: imageBackground)
         contentView?.alpha = CGFloat(BaseData.alphaNum.rawValue)
@@ -35,7 +35,7 @@ class BaseViewController: UIViewController {
         labelTitulo?.backgroundColor = UIColor.clear
         labelTitulo?.font = UIFont.boldSystemFont(ofSize: CGFloat(sizeFont.fontBase.rawValue))
         labelTitulo?.text = TitleViewController
-        
+
         self.view.insertSubview(contentView, at: TableInformationViewData.numeroOfOptional.rawValue)
         self.view.addSubview(labelTitulo!)
     }

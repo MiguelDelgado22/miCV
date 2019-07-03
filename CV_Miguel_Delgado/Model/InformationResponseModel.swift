@@ -8,8 +8,8 @@
 
 import Foundation
 
-class InformationResponseModel: Codable{
-    
+class InformationResponseModel: Codable {
+
     var name: String = ""
     var city: String = ""
     var telephoneNumber: String = ""
@@ -18,8 +18,8 @@ class InformationResponseModel: Codable{
     var objective: String = ""
     var education: [Education]?
     var experience: [Experience]?
-    
-    private enum CodingKeys : String, CodingKey{
+
+    private enum CodingKeys: String, CodingKey {
         case name
         case city
         case telephoneNumber
@@ -31,26 +31,24 @@ class InformationResponseModel: Codable{
     }
 }
 
-
-
 class Education: Codable {
     var university: String = ""
     var date: String = ""
-    
-    private enum CodingKeys : String, CodingKey{
+
+    private enum CodingKeys: String, CodingKey {
         case university
         case date
     }
 }
 
 class Experience: Codable {
-    var name : String = ""
+    var name: String = ""
     var date: String = ""
     var role: String = ""
     var descripcion: String = ""
     var image: String = ""
-    
-    private enum CodingKeys: String, CodingKey{
+
+    private enum CodingKeys: String, CodingKey {
         case name
         case date
         case role

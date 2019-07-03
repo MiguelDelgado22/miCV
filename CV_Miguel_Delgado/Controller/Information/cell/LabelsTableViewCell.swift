@@ -9,7 +9,7 @@
 import UIKit
 
 class LabelsTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var lbName: UILabel?
     @IBOutlet weak var lbCity: UILabel?
     @IBOutlet weak var lbNumber: UILabel?
@@ -17,7 +17,7 @@ class LabelsTableViewCell: UITableViewCell {
     @IBOutlet weak var lbBirthday: UILabel?
     @IBOutlet weak var lbObjective: UILabel?
 
-    func updateUI(responseInformation: InformationResponseModel?){
+    func updateUI(responseInformation: InformationResponseModel?) {
         lbName?.text = responseInformation?.name
         lbCity?.text = responseInformation?.city
         lbNumber?.text = responseInformation?.telephoneNumber
@@ -25,5 +25,5 @@ class LabelsTableViewCell: UITableViewCell {
         lbBirthday?.text = responseInformation?.birthday
         lbObjective?.text = responseInformation?.objective
     }
-    
+
 }

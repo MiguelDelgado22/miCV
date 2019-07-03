@@ -9,7 +9,7 @@
 import UIKit
 
 class ExperienceTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var lbName: UILabel?
     @IBOutlet weak var lbDate: UILabel?
     @IBOutlet weak var lbRole: UILabel?

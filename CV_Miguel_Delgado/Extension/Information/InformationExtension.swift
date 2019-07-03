@@ -9,16 +9,16 @@
 import Foundation
 import UIKit
 
-//MARK: DELEGATE OF PRESENTER
-extension InformationViewController: InformationPresenterDelegate{
+// MARK: DELEGATE OF PRESENTER
+extension InformationViewController: InformationPresenterDelegate {
     func errorInWebServices(error: String) {
         showAlertError(error: error)
     }
-    
+
     func errorNotFound(error: String) {
        showAlertError(error: error)
     }
-    
+
     func informationPersonal(response: InformationResponseModel) {
         responseInfo = response
         pastDataOfNextTab()
@@ -26,28 +26,28 @@ extension InformationViewController: InformationPresenterDelegate{
             self.tbContainer?.reloadData()
         }
     }
-    
-    func showAlertError(error: String){
+
+    func showAlertError(error: String) {
         let alert = UIAlertController(title: NSLocalizedString(AlertError.error.rawValue, comment: ""), message: error, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString(AlertError.acept.rawValue, comment: ""), style: .default, handler: nil))
         self.present(alert, animated: true)
     }
- 
+
 }
 
-extension InformationViewController: UITableViewDelegate, UITableViewDataSource{
+extension InformationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return TableInformationViewData.numerOfRowInSection.rawValue
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return TableInformationViewData.numerOfRowInSection.rawValue
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(TableInformationViewData.heightForRowAt.rawValue)
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = LabelsTableViewCell()
         tableView.register(UINib(nibName: NameOfCells.viewControllerInformations.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformations.rawValue )
@@ -55,14 +55,14 @@ extension InformationViewController: UITableViewDelegate, UITableViewDataSource{
         cell.updateUI(responseInformation: responseInfo)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.backgroundColor = UIColor.clear
-        
+
         return cell
     }
 }
 
-extension InformationViewController{
-    func pastDataOfNextTab(){
-        if let secondTab = self.tabBarController?.viewControllers?[1] as? ExperienceViewController{
+extension InformationViewController {
+    func pastDataOfNextTab() {
+        if let secondTab = self.tabBarController?.viewControllers?[1] as? ExperienceViewController {
             secondTab.infoExperience = responseInfo?.experience
         }
     }

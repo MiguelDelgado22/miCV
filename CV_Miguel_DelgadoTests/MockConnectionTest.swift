@@ -10,7 +10,7 @@ import XCTest
 @testable import CV_Miguel_Delgado
 
 class MockConnectionTest: XCTestCase {
-    
+
     var connection: MockConnectionProtocol?
 
     override func setUp() {
@@ -20,88 +20,76 @@ class MockConnectionTest: XCTestCase {
     override func tearDown() {
         connection = nil
       }
-    
-    
+
     func testSucessResponse() {
         connection?.successTest(completionHandler: { (response) in
             switch response {
-            case .network(_):
+            case .network:
                 XCTFail()
-            case .notFound(_):
+            case .notFound:
                 XCTFail()
-            case .fatal(_):
+            case .fatal:
                 XCTFail()
-            case .success(_):
+            case .success:
                 XCTAssert(true)
             }
         })
     }
-    
+
     func testFailResponse() {
         connection?.failTest(completionHandler: { (response) in
             switch response {
-            case .network(_):
+            case .network:
                 XCTFail()
-            case .notFound(_):
+            case .notFound:
                 XCTFail()
-            case .fatal(_):
+            case .fatal:
                 XCTAssert(true)
-            case .success(_):
+            case .success:
                 XCTFail()
             }
         })
     }
-    
-    func testSuccessModel()  {
-        
+
+    func testSuccessModel() {
+
         connection?.successTest(completionHandler: { (response) in
             switch response {
-            case .network(_):
+            case .network:
                 XCTFail()
-            case .notFound(_):
+            case .notFound:
                 XCTFail()
-            case .fatal(_):
+            case .fatal:
                 XCTFail()
             case .success(let data):
                 do {
-                    XCTAssertNoThrow(try JSONDecoder().decode(InformationResponseModel.self, from:data))
+                    XCTAssertNoThrow(try JSONDecoder().decode(InformationResponseModel.self, from: data))
                 } catch {
                     XCTFail()
                 }
             }
         })
     }
-    
-    func testCheckValue(){
+
+    func testCheckValue() {
         connection?.successTest(completionHandler: { (response) in
-            switch response{
+            switch response {
             case .success(let data):
-                let response = try? JSONDecoder().decode(InformationResponseModel.self, from:data)
+                let response = try? JSONDecoder().decode(InformationResponseModel.self, from: data)
                 XCTAssertEqual( response?.name, "Miguel Delgado")
                 XCTAssertEqual(response?.city, "Mexico City")
                 XCTAssertEqual(response?.telephoneNumber, "55-78-78-97-94")
                 XCTAssertEqual(response?.email, "migdelgado@outlook.com")
                 XCTAssertEqual(response?.birthday, "04-12-1993")
                 XCTAssertEqual(response?.objective, "Be part of a company in which I can develop the necessary strategies to contribute to increase your competitiveness")
-             case .network( _):
+             case .network:
                 XCTFail()
-            case .notFound( _):
+            case .notFound:
                 XCTFail()
-            case .fatal( _):
+            case .fatal:
                 XCTFail()
             }
         })
     }
-    
-
-    
-    
-    
-
 
 }
-
-
-
-
-

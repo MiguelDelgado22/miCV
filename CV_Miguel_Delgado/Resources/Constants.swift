@@ -13,24 +13,24 @@ enum URLPrincipal: String {
     case urlPrincipal = "https://gist.githubusercontent.com/MiguelDelgado22/47dad348488891b1d5fba23b41b25b04/raw/0c139c35260824723a1b52df21f3a48447f62573/MyCV"
 }
 
-enum NameOfCells: String{
+enum NameOfCells: String {
     case viewControllerInformations = "LabelsTableViewCell"
     case viewExperience = "experienceTableViewCell"
-    
+
 }
 
-enum NameOfImage: String{
+enum NameOfImage: String {
     case IMG_BACKGROUND_SCREEN = "background"
 }
 
-enum TableInformationViewData: Int{
+enum TableInformationViewData: Int {
     case numeroOfOptional = 0
     case numerOfRowInSection = 1
     case heightForRowAt = 238
     case heightForRowAtExperience = 188
 }
 
-enum BaseData: Double{
+enum BaseData: Double {
     case alphaNum = 0.5
     case positionXYcontentView = 0.0
     case labelPositionX = 16.0
@@ -39,7 +39,7 @@ enum BaseData: Double{
     case labelPositionHeigth = 63.0
 }
 
-enum sizeFont: Double{
+enum sizeFont: Double {
     case fontBase = 23.0
 }
 
@@ -50,7 +50,7 @@ enum ApiServiceState: Error {
     case success(response: Data)
 }
 
-enum HttpStatusCode : Int{
+enum HttpStatusCode: Int {
     case OK = 200
     case OKFULL = 300
 }
@@ -61,7 +61,7 @@ enum DownloadResult {
     case fatal(error: String)
 }
 
-enum AlertError: String{
+enum AlertError: String {
     case error = "Error"
     case acept = "OK"
     case again = "Vuelva a intentarlo"

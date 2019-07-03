@@ -9,23 +9,23 @@
 import UIKit
 
 class ExperienceViewController: BaseViewController {
-    
+
     @IBOutlet weak var tbContenedor: UITableView?
-    
+
     private var presenterExperience: ExperiencePresenter?
-    
+
     var infoExperience: [Experience]?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
        configText()
         self.presenterExperience = ExperiencePresenter(delegate: self)
         tbContenedor?.delegate = self
         tbContenedor?.dataSource = self
-        
+
     }
-    
-    func configText(){
+
+    func configText() {
          labelTitulo?.text  = NSLocalizedString("experience", comment: "")
     }
 }

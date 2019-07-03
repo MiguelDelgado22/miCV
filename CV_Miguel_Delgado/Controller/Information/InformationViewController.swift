@@ -11,11 +11,11 @@ import UIKit
 class InformationViewController: BaseViewController {
     @IBOutlet weak var imgPhoto: UIImageView?
     @IBOutlet weak var tbContainer: UITableView?
-    
+
     private var presenterInformation: InformationPresenter?
-    
+
     var responseInfo: InformationResponseModel?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configText()
@@ -24,7 +24,7 @@ class InformationViewController: BaseViewController {
         tbContainer?.delegate = self
         tbContainer?.dataSource = self
     }
-    func configText(){
+    func configText() {
        labelTitulo?.text = NSLocalizedString("titulo", comment: "")
     }
 }

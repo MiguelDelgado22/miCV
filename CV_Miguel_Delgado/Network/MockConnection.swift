@@ -7,7 +7,7 @@
 //
 import Foundation
 
-protocol MockConnectionProtocol: ApiServiceProtocol{
+protocol MockConnectionProtocol: ApiServiceProtocol {
     func successTest(completionHandler: @escaping (ApiServiceState) -> Void)
     func failTest(completionHandler: @escaping (ApiServiceState) -> Void)
 }
@@ -18,25 +18,19 @@ class MockConnection: MockConnectionProtocol {
             completionHandler(response)
         }
     }
-    
+
     func failTest(completionHandler: @escaping (ApiServiceState) -> Void) {
         completionHandler(.fatal(reason: "No paso"))
     }
-   
+
     func makeRequest(with router: URLSessionTask, completionHandler: @escaping (ApiServiceState) -> Void) {
-        
-        if let path = Bundle.main.path(forResource: "Information", ofType: "json"){
+
+        if let path = Bundle.main.path(forResource: "Information", ofType: "json") {
             do {
                 let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 completionHandler(.success(response: data))
             }
         }
     }
-    
- 
-    
-    
-    
-    
-    
+
 }

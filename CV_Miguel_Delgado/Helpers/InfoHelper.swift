@@ -8,12 +8,11 @@
 
 import Foundation
 
-
 class InfoHelper: NSObject {
     //Download cambia el nombre
-    func myInfo(completionHandler: @escaping(DownloadResult)-> Void){
+    func myInfo(completionHandler: @escaping(DownloadResult) -> Void) {
         ApiService().makeRequest(with: URLSession.shared) { (response) in
-            switch response{
+            switch response {
             case .success(let data):
                 completionHandler(.success(data:data))
                 break
