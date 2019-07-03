@@ -34,7 +34,7 @@ class InformationPresenter {
                 self.delegate?.errorInWebServices(error: AlertError.again.rawValue)
                 break
             case .notFound:
-                self.delegate?.errorNotFound(error: AlertError.internet.rawValue)
+                self.delegate?.errorNotFound(error: AlertError.notInternet.rawValue)
             }
         }
 

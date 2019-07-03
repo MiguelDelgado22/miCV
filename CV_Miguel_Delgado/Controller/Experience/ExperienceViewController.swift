@@ -26,6 +26,6 @@ class ExperienceViewController: BaseViewController {
     }
 
     func configText() {
-         labelTitulo?.text  = NSLocalizedString("experience", comment: "")
+         labelTitulo?.text  = NSLocalizedString(Title.experience.rawValue, comment: "")
     }
 }

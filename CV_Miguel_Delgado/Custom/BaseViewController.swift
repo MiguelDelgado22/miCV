@@ -33,7 +33,7 @@ class BaseViewController: UIViewController {
         labelTitulo?.textColor = UIColor.black
         labelTitulo?.textAlignment = .center
         labelTitulo?.backgroundColor = UIColor.clear
-        labelTitulo?.font = UIFont.boldSystemFont(ofSize: CGFloat(sizeFont.fontBase.rawValue))
+        labelTitulo?.font = UIFont.boldSystemFont(ofSize: CGFloat(SizeFont.fontBase.rawValue))
         labelTitulo?.text = TitleViewController
 
         self.view.insertSubview(contentView, at: TableInformationViewData.numeroOfOptional.rawValue)
