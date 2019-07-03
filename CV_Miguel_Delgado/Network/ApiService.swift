@@ -8,29 +8,23 @@
 
 import Foundation
 
-protocol ApiServiceProtocol {
-    func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void)
-}
-
 class ApiService: ApiServiceProtocol {
-    
     // MARK: Make a request method
     /**
-     Get the data from principal url
+     Get the data from main url
      
      - parameters:
      - router: A URLSessionTask
      - completitionHandler: A closure that need be defined by the caller to manipulate the data
      */
     func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void) {
-        
-        if let url = URL(string: URLPrincipal.urlPrincipal.rawValue) {
+        guard let stringURL = Config.setUrlAsString(for: StaticURL.mainURL.rawValue) else { return }
+        if let url = URL(string: stringURL) {
             router.dataTask(with: url) { (data, response, _) in
                 if let response = response as? HTTPURLResponse, let data = data {
                     if response.statusCode == NSURLErrorNotConnectedToInternet {
                         completionHandler(.notFound(reason: NSLocalizedString(NetworkError.notConnection.rawValue, comment: "")))
                     }
-
                     switch(response.statusCode) {
                     case (HttpStatusCode.OK.rawValue ..< HttpStatusCode.OKFULL.rawValue):
                         completionHandler(.success(response: data))

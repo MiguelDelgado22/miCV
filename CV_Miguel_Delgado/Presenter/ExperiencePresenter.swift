@@ -8,16 +8,9 @@
 
 import Foundation
 
-protocol  ExperiencePresenterDelegate: AnyObject {
-
-}
-
 class ExperiencePresenter {
-
     weak private var delegate: ExperiencePresenterDelegate?
-
     init(delegate: ExperiencePresenterDelegate) {
         self.delegate = delegate
     }
-
 }

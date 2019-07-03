@@ -9,8 +9,8 @@
 import UIKit
 
 //MARK: - Strings for urls
-enum URLPrincipal: String {
-    case urlPrincipal = "https://gist.githubusercontent.com/MiguelDelgado22/47dad348488891b1d5fba23b41b25b04/raw/0c139c35260824723a1b52df21f3a48447f62573/MyCV"
+enum StaticURL: String {
+    case mainURL = "MAINURL"
 }
 
 //MARK: - Strings for cell identifier
@@ -87,4 +87,11 @@ enum Title: String {
 enum NetworkError: String {
     case notConnection = "notConnection"
     case unexpected = "unexpected"
+}
+
+//MARK: - Get strings from xconfig files
+enum Config {
+    static func setUrlAsString(for key: String) -> String? {
+        return (Bundle.main.infoDictionary?[key] as? String)
+    }
 }

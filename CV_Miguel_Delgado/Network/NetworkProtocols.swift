@@ -8,8 +8,12 @@
 
 import Foundation
 
+protocol ApiServiceProtocol {
+    func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void)
+}
+
 protocol URLSessionTask {
 func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
 }
 
-extension URLSession: URLSessionTask { }
+extension URLSession: URLSessionTask {}

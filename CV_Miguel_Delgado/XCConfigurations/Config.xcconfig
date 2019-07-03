@@ -1,0 +1,15 @@
+//
+//  Config.xcconfig
+//  CV_Miguel_Delgado
+//
+//  Created by Miguel on 7/3/19.
+//  Copyright © 2019 Miguel Angel Delgado Alcantara. All rights reserved.
+//
+
+//MARK: - Configurations for the app
+APPNAME = MyCV
+APPBUNDLE = miguel.CVMiguelDelgado
+APPVERSION = 1.0
+
+//MARK: - Main URL
+MAINURL = https:/gist.githubusercontent.com/MiguelDelgado22/47dad348488891b1d5fba23b41b25b04/raw

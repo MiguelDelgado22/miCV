@@ -6,11 +6,7 @@
 //  Copyright © 2019 Miguel Angel Delgado Alcantara. All rights reserved.
 //
 import Foundation
-
-protocol MockConnectionProtocol: ApiServiceProtocol {
-    func successTest(completionHandler: @escaping (ApiServiceState) -> Void)
-    func failTest(completionHandler: @escaping (ApiServiceState) -> Void)
-}
+@testable import CV_Miguel_Delgado
 
 class MockConnection: MockConnectionProtocol {
     func successTest(completionHandler: @escaping (ApiServiceState) -> Void) {
@@ -24,7 +20,6 @@ class MockConnection: MockConnectionProtocol {
     }
 
     func makeRequest(with router: URLSessionTask, completionHandler: @escaping (ApiServiceState) -> Void) {
-
         if let path = Bundle.main.path(forResource: "Information", ofType: "json") {
             do {
                 
@@ -34,5 +29,4 @@ class MockConnection: MockConnectionProtocol {
             }
         }
     }
-
 }
