@@ -10,7 +10,7 @@ import UIKit
 
 //MARK: - Strings for urls
 enum StaticURL: String {
-    case mainURL = "MAINURL"}
+    case mainURL = "MAINURL"
 }
 
 //MARK: - Strings for cell identifier

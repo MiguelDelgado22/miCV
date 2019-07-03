@@ -11,22 +11,13 @@ import UIKit
 class ExperienceViewController: BaseViewController {
 
     @IBOutlet weak var tbContenedor: UITableView?
-<<<<<<< HEAD
     var presenterExperience: ExperiencePresenter? {
         didSet {
             self.presenterExperience?.infoExperience = (self.navigationController?.viewControllers.first as? InformationViewController)?.presenterInformation?.responseInfo?.experience
-            print(self.presenterExperience)
             self.tbContenedor?.reloadData()
         }
     }
     
-=======
-
-    private var presenterExperience: ExperiencePresenter?
-
-    var infoExperience: [Experience]?
-    var dataImageDownload: Data?
->>>>>>> Fix: image download
     override func viewDidLoad() {
         super.viewDidLoad()
        guard let tbcontenedor = tbContenedor else {
