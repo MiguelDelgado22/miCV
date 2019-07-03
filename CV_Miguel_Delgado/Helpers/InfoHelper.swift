@@ -32,4 +32,22 @@ class InfoHelper: NSObject {
             }
         }
     }
+    
+    func downloadImg(urlImage: URL, completionHandler: @escaping(DownloadResult) -> Void){
+        ApiService().downloadImage(with: URLSession.shared, urlDownload: urlImage) { (response) in
+            switch response{
+            case .success(let data):
+                completionHandler(.success(data: data))
+                break
+            case .fatal(let fatal):
+                completionHandler(.fatal(error: fatal))
+                break
+            case .notFound(let notFound):
+                completionHandler(.notFound(error: notFound))
+            default:
+                break
+            }
+        }
+        
+    }
 }

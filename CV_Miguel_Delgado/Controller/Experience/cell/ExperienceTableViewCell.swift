@@ -21,6 +21,22 @@ class ExperienceTableViewCell: UITableViewCell {
         self.lbDate?.text = infoExperience.date
         self.lbRole?.text = infoExperience.role
         self.lbDescription?.text = infoExperience.descripcion
-        self.img?.image = UIImage(named: infoExperience.image)
+        
+        if let url = URL(string: infoExperience.image ){
+        InfoHelper().downloadImg(urlImage: url) { (response) in
+            switch response{
+            case .success(let data):
+                    DispatchQueue.main.async() {
+                        self.img?.image = UIImage(data: data)
+                    }
+                break
+            default:
+                break
+                }
+            }
+        }
+        
+        
     }
+  
 }

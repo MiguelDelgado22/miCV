@@ -14,7 +14,6 @@ class ExperienceViewController: BaseViewController {
     var presenterExperience: ExperiencePresenter? {
         didSet {
             self.presenterExperience?.infoExperience = (self.navigationController?.viewControllers.first as? InformationViewController)?.presenterInformation?.responseInfo?.experience
-            print(self.presenterExperience)
             self.tbContenedor?.reloadData()
         }
     }
