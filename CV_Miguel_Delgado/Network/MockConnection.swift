@@ -7,11 +7,6 @@
 //
 import Foundation
 
-protocol MockConnectionProtocol: ApiServiceProtocol {
-    func successTest(completionHandler: @escaping (ApiServiceState) -> Void)
-    func failTest(completionHandler: @escaping (ApiServiceState) -> Void)
-}
-
 class MockConnection: MockConnectionProtocol {
     func successTest(completionHandler: @escaping (ApiServiceState) -> Void) {
         makeRequest(with: URLSession.shared) { (response) in
@@ -24,7 +19,6 @@ class MockConnection: MockConnectionProtocol {
     }
 
     func makeRequest(with router: URLSessionTask, completionHandler: @escaping (ApiServiceState) -> Void) {
-
         if let path = Bundle.main.path(forResource: "Information", ofType: "json") {
             do {
                 
@@ -34,5 +28,4 @@ class MockConnection: MockConnectionProtocol {
             }
         }
     }
-
 }

@@ -8,12 +8,7 @@
 
 import Foundation
 
-protocol ApiServiceProtocol {
-    func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void)
-}
-
 class ApiService: ApiServiceProtocol {
-    
     // MARK: Make a request method
     /**
      Get the data from main url
@@ -30,7 +25,6 @@ class ApiService: ApiServiceProtocol {
                     if response.statusCode == NSURLErrorNotConnectedToInternet {
                         completionHandler(.notFound(reason: NSLocalizedString(NetworkError.notConnection.rawValue, comment: "")))
                     }
-
                     switch(response.statusCode) {
                     case (HttpStatusCode.OK.rawValue ..< HttpStatusCode.OKFULL.rawValue):
                         completionHandler(.success(response: data))
