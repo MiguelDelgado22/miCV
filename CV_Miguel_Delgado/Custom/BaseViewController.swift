@@ -28,7 +28,7 @@ class BaseViewController: UIViewController {
         contentView = UIImageView(image: imageBackground)
         contentView?.alpha = CGFloat(BaseData.alphaNum.rawValue)
         contentView?.frame = CGRect(x: CGFloat(positionXY), y: CGFloat(positionXY), width: screenSize.width, height: screenSize.height)
-        labelTitulo = UILabel.init(frame: CGRect.init(x: BaseData.labelPositionX.rawValue, y: BaseData.labelPositionY.rawValue, width: BaseData.labelPositionWith.rawValue, height: BaseData.labelPositionHeigth.rawValue))
+         labelTitulo = UILabel.init(frame: CGRect.init(x: BaseData.positionXYcontentView.rawValue, y: BaseData.labelPositionY.rawValue, width: Double(screenSize.size.width), height: BaseData.labelPositionHeigth.rawValue))
         labelTitulo?.layoutIfNeeded()
         labelTitulo?.textColor = UIColor.black
         labelTitulo?.textAlignment = .center
