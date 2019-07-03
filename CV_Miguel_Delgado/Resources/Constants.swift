@@ -6,7 +6,6 @@
 //  Copyright © 2019 Miguel Angel Delgado Alcantara. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 enum URLPrincipal: String {
@@ -62,8 +61,18 @@ enum DownloadResult {
 }
 
 enum AlertError: String {
-    case error = "Error"
-    case acept = "OK"
-    case again = "Vuelva a intentarlo"
-    case internet = "Sin Internet"
+    case error = "error"
+    case acept = "ok"
+    case again = "repeat"
+    case notInternet = "notConnection"
+}
+
+enum Title: String {
+    case information = "information"
+    case experience = "experience"
+}
+
+enum NetworkError: String {
+    case notConnection = "notConnection"
+    case unexpected = "unexpected"
 }

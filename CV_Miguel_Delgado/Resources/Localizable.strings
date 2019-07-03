@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  CV_Miguel_Delgado
+
+  Created by Miguel on 7/3/19.
+  Copyright © 2019 Miguel Angel Delgado Alcantara. All rights reserved.
+*/
+
+//MARK: - String for errors
+"failTest" = "Status test: fail!";
+"notConnection" = "No internet connection!";
+"unexpected" = "Unexpected error!";
+
+
+//MARK: - Strings for alerts
+"error" = "Error!";
+"ok" = "OK";
+"repeat" =  "Please try again";
+
+//MARK: - Strings for titles
+"experience" = "Experience";
+"information" = "Information";
+

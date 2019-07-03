@@ -6,7 +6,6 @@
 //  Copyright © 2019 Miguel Angel Delgado Alcantara. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 // MARK: DELEGATE OF PRESENTER

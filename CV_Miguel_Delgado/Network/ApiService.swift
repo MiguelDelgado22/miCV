@@ -20,7 +20,7 @@ class ApiService: ApiServiceProtocol {
             router.dataTask(with: url) { (data, response, _) in
                 if let response = response as? HTTPURLResponse, let data = data {
                     if response.statusCode == NSURLErrorNotConnectedToInternet {
-                        completionHandler(.notFound(reason: NSLocalizedString("No Internet", comment: "")))
+                        completionHandler(.notFound(reason: NSLocalizedString(NetworkError.notConnection.rawValue, comment: "")))
                     }
 
                     switch(response.statusCode) {
@@ -28,7 +28,7 @@ class ApiService: ApiServiceProtocol {
                         completionHandler(.success(response: data))
                         break
                     default:
-                        completionHandler(.fatal(reason: NSLocalizedString("Unexpected error", comment: "")))
+                        completionHandler(.fatal(reason: NSLocalizedString(NetworkError.unexpected.rawValue, comment: "")))
                         break
                     }
                 } else {

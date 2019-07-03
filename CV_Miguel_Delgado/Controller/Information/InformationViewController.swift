@@ -26,7 +26,7 @@ class InformationViewController: BaseViewController {
     }
     
     func configText() {
-       labelTitulo?.text = NSLocalizedString("titulo", comment: "")
+       labelTitulo?.text = NSLocalizedString(Title.information.rawValue, comment: "")
     }
     
     func pastDataOfNextTab() {
