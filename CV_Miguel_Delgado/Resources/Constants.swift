@@ -11,6 +11,7 @@ import UIKit
 //MARK: - Strings for urls
 enum StaticURL: String {
     case mainURL = "MAINURL"}
+}
 
 //MARK: - Strings for cell identifier
 enum NameOfCells: String {
