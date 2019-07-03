@@ -7,3 +7,5 @@
 */
 "titulo" = "MI INFORMACIÓN";
 "experience" = "MI EXPERIENCIA";
+"No Internet" = "No tiene internet";
+"Unexpected error" = "Ocurrio algun error Inesperado";

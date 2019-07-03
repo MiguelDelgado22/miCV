@@ -10,12 +10,12 @@ import UIKit
 
 class LabelsTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbCity: UILabel!
-    @IBOutlet weak var lbNumber: UILabel!
-    @IBOutlet weak var lbEmail: UILabel!
-    @IBOutlet weak var lbBirthday: UILabel!
-    @IBOutlet weak var lbObjective: UILabel!
+    @IBOutlet weak var lbName: UILabel?
+    @IBOutlet weak var lbCity: UILabel?
+    @IBOutlet weak var lbNumber: UILabel?
+    @IBOutlet weak var lbEmail: UILabel?
+    @IBOutlet weak var lbBirthday: UILabel?
+    @IBOutlet weak var lbObjective: UILabel?
     
     
 
@@ -26,8 +26,15 @@ class LabelsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    func updateUI(responseInformation: InformationResponseModel?){
+        lbName?.text = responseInformation?.name
+        lbCity?.text = responseInformation?.city
+        lbNumber?.text = responseInformation?.telephoneNumber
+        lbEmail?.text = responseInformation?.email
+        lbBirthday?.text = responseInformation?.birthday
+        lbObjective?.text = responseInformation?.objective
     }
     
 }

@@ -23,24 +23,21 @@ class BaseViewController: UIViewController {
     
     func configBase(){
         let screenSize: CGRect = UIScreen.main.bounds
+        let positionXY = BaseData.positionXYcontentView.rawValue
         
         let imageBackground = UIImage(named: NameOfImage.IMG_BACKGROUND_SCREEN.rawValue)
         contentView = UIImageView(image: imageBackground)
-        contentView?.alpha = 0.5
-        contentView?.frame = CGRect(x: 0, y: 0, width: screenSize.width, height: screenSize.height)
-        
-        labelTitulo = UILabel.init(frame: CGRect.init(x: 16, y: 34, width: 343, height: 63))
+        contentView?.alpha = CGFloat(BaseData.alphaNum.rawValue)
+        contentView?.frame = CGRect(x: CGFloat(positionXY), y: CGFloat(positionXY), width: screenSize.width, height: screenSize.height)
+        labelTitulo = UILabel.init(frame: CGRect.init(x: BaseData.labelPositionX.rawValue, y: BaseData.labelPositionY.rawValue, width: BaseData.labelPositionWith.rawValue, height: BaseData.labelPositionHeigth.rawValue))
         labelTitulo?.layoutIfNeeded()
         labelTitulo?.textColor = UIColor.black
         labelTitulo?.textAlignment = .center
         labelTitulo?.backgroundColor = UIColor.clear
-        labelTitulo?.font = UIFont.boldSystemFont(ofSize: 23.0)
+        labelTitulo?.font = UIFont.boldSystemFont(ofSize: CGFloat(sizeFont.fontBase.rawValue))
         labelTitulo?.text = TitleViewController
         
-        self.view.insertSubview(contentView, at: 0)
+        self.view.insertSubview(contentView, at: TableInformationViewData.numeroOfOptional.rawValue)
         self.view.addSubview(labelTitulo!)
-        
-        
     }
-
 }

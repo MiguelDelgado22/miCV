@@ -10,6 +10,8 @@ import Foundation
 
 protocol  InformationPresenterDelegate: AnyObject{
     func informationPersonal(response: InformationResponseModel)
+    func errorInWebServices(error: String)
+    func errorNotFound(error: String)
     
 }
 
@@ -23,13 +25,17 @@ class InformationPresenter{
     }
     
     func myInformation(){
-        if let path = Bundle.main.path(forResource: "Information", ofType: "json"){
-            do {
-                let data = try! Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let myInfo = try! JSONDecoder().decode(InformationResponseModel.self, from: data)
-                self.delegate?.informationPersonal(response: myInfo)
-                InfoService.shared.userInfo = myInfo
-                print(myInfo)
+        InfoHelpers().myInfo { (responseData) in
+            switch responseData{
+            case .success(let dataResponse):
+                let myInfo = try! JSONDecoder().decode(InformationResponseModel.self, from: dataResponse)
+                 self.delegate?.informationPersonal(response: myInfo)
+                break
+            case .fatal( _):
+                self.delegate?.errorInWebServices(error:  AlertError.again.rawValue)
+                break
+            case .notFound( _):
+                self.delegate?.errorNotFound(error:AlertError.internet.rawValue)
             }
         }
         

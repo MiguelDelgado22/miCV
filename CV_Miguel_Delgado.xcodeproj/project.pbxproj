@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C760D79B22C6C98B008845F4 /* MockConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564822C6B78B005CC59D /* MockConnection.swift */; };
 		C76B17DC22C3E9CF00D8D2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B17DB22C3E9CF00D8D2CD /* AppDelegate.swift */; };
 		C76B17E322C3E9CF00D8D2CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B17E122C3E9CF00D8D2CD /* Main.storyboard */; };
 		C76B17E522C3E9CF00D8D2CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B17E422C3E9CF00D8D2CD /* Assets.xcassets */; };
@@ -23,11 +24,16 @@
 		C76B182922C4248A00D8D2CD /* ExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B182822C4248A00D8D2CD /* ExperiencePresenter.swift */; };
 		C76B182D22C425C500D8D2CD /* ExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B182B22C425C500D8D2CD /* ExperienceTableViewCell.swift */; };
 		C76B182E22C425C500D8D2CD /* experienceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76B182C22C425C500D8D2CD /* experienceTableViewCell.xib */; };
-		C76B183122C429D600D8D2CD /* InfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B183022C429D600D8D2CD /* InfoService.swift */; };
 		C76B183322C42E4700D8D2CD /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C76B183222C42E4700D8D2CD /* Readme.md */; };
 		C76B183622C4859A00D8D2CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B183522C4859A00D8D2CD /* BaseViewController.swift */; };
 		C7FD561522C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD561422C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift */; };
 		C7FD562322C56477005CC59D /* CV_Miguel_DelgadoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD562222C56477005CC59D /* CV_Miguel_DelgadoTests.swift */; };
+		C7FD562D22C57BA0005CC59D /* InformationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD562C22C57BA0005CC59D /* InformationExtension.swift */; };
+		C7FD563422C57C6B005CC59D /* ExperienceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563322C57C6B005CC59D /* ExperienceExtension.swift */; };
+		C7FD563922C5902A005CC59D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563822C5902A005CC59D /* Network.swift */; };
+		C7FD563B22C5D18C005CC59D /* ProtocolNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563A22C5D18C005CC59D /* ProtocolNetwork.swift */; };
+		C7FD564022C5EA74005CC59D /* InfoHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563F22C5EA74005CC59D /* InfoHelpers.swift */; };
+		C7FD564F22C6BE72005CC59D /* MockConnectionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564622C6B665005CC59D /* MockConnectionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +76,6 @@
 		C76B182822C4248A00D8D2CD /* ExperiencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencePresenter.swift; sourceTree = "<group>"; };
 		C76B182B22C425C500D8D2CD /* ExperienceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceTableViewCell.swift; sourceTree = "<group>"; };
 		C76B182C22C425C500D8D2CD /* experienceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = experienceTableViewCell.xib; sourceTree = "<group>"; };
-		C76B183022C429D600D8D2CD /* InfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoService.swift; sourceTree = "<group>"; };
 		C76B183222C42E4700D8D2CD /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		C76B183522C4859A00D8D2CD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C7FD561222C55D24005CC59D /* CV_Miguel_DelgadoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CV_Miguel_DelgadoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +84,13 @@
 		C7FD562022C56477005CC59D /* CV_Miguel_DelgadoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CV_Miguel_DelgadoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FD562222C56477005CC59D /* CV_Miguel_DelgadoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_Miguel_DelgadoTests.swift; sourceTree = "<group>"; };
 		C7FD562422C56477005CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7FD562C22C57BA0005CC59D /* InformationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationExtension.swift; sourceTree = "<group>"; };
+		C7FD563322C57C6B005CC59D /* ExperienceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceExtension.swift; sourceTree = "<group>"; };
+		C7FD563822C5902A005CC59D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C7FD563A22C5D18C005CC59D /* ProtocolNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolNetwork.swift; sourceTree = "<group>"; };
+		C7FD563F22C5EA74005CC59D /* InfoHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHelpers.swift; sourceTree = "<group>"; };
+		C7FD564622C6B665005CC59D /* MockConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnectionTest.swift; sourceTree = "<group>"; };
+		C7FD564822C6B78B005CC59D /* MockConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +142,10 @@
 		C76B17DA22C3E9CF00D8D2CD /* CV_Miguel_Delgado */ = {
 			isa = PBXGroup;
 			children = (
+				C7FD563E22C5EA61005CC59D /* Helpers */,
+				C7FD563522C58858005CC59D /* Network */,
+				C7FD562A22C57B53005CC59D /* Extension */,
 				C76B183422C4857500D8D2CD /* Custom */,
-				C76B182F22C429AD00D8D2CD /* Data */,
 				C76B180522C417A300D8D2CD /* Resources */,
 				C76B17FE22C3F65100D8D2CD /* Response */,
 				C76B17F122C3EB1300D8D2CD /* Controller */,
@@ -233,14 +247,6 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
-		C76B182F22C429AD00D8D2CD /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				C76B183022C429D600D8D2CD /* InfoService.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		C76B183422C4857500D8D2CD /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,10 +267,54 @@
 		C7FD562122C56477005CC59D /* CV_Miguel_DelgadoTests */ = {
 			isa = PBXGroup;
 			children = (
+				C7FD564622C6B665005CC59D /* MockConnectionTest.swift */,
 				C7FD562222C56477005CC59D /* CV_Miguel_DelgadoTests.swift */,
 				C7FD562422C56477005CC59D /* Info.plist */,
 			);
 			path = CV_Miguel_DelgadoTests;
+			sourceTree = "<group>";
+		};
+		C7FD562A22C57B53005CC59D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD562E22C57C02005CC59D /* Experience */,
+				C7FD562B22C57B65005CC59D /* Information */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C7FD562B22C57B65005CC59D /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD562C22C57BA0005CC59D /* InformationExtension.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		C7FD562E22C57C02005CC59D /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD563322C57C6B005CC59D /* ExperienceExtension.swift */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		C7FD563522C58858005CC59D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD564822C6B78B005CC59D /* MockConnection.swift */,
+				C7FD563822C5902A005CC59D /* Network.swift */,
+				C7FD563A22C5D18C005CC59D /* ProtocolNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C7FD563E22C5EA61005CC59D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C7FD563F22C5EA74005CC59D /* InfoHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,13 +457,18 @@
 				C76B182722C4232200D8D2CD /* ExperienceViewController.swift in Sources */,
 				C76B182D22C425C500D8D2CD /* ExperienceTableViewCell.swift in Sources */,
 				C76B183622C4859A00D8D2CD /* BaseViewController.swift in Sources */,
+				C7FD563422C57C6B005CC59D /* ExperienceExtension.swift in Sources */,
 				C76B17DC22C3E9CF00D8D2CD /* AppDelegate.swift in Sources */,
 				C76B180222C3FD0D00D8D2CD /* InformationResponseModel.swift in Sources */,
 				C76B17FA22C3F1AE00D8D2CD /* LabelsTableViewCell.swift in Sources */,
-				C76B183122C429D600D8D2CD /* InfoService.swift in Sources */,
+				C7FD563B22C5D18C005CC59D /* ProtocolNetwork.swift in Sources */,
 				C76B182922C4248A00D8D2CD /* ExperiencePresenter.swift in Sources */,
+				C760D79B22C6C98B008845F4 /* MockConnection.swift in Sources */,
+				C7FD562D22C57BA0005CC59D /* InformationExtension.swift in Sources */,
+				C7FD564022C5EA74005CC59D /* InfoHelpers.swift in Sources */,
 				C76B17F422C3EEE900D8D2CD /* InformationViewController.swift in Sources */,
 				C76B17FD22C3F1D600D8D2CD /* InformationPresenter.swift in Sources */,
+				C7FD563922C5902A005CC59D /* Network.swift in Sources */,
 				C76B180722C417BA00D8D2CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FD562322C56477005CC59D /* CV_Miguel_DelgadoTests.swift in Sources */,
+				C7FD564F22C6BE72005CC59D /* MockConnectionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

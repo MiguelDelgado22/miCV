@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import CV_Miguel_Delgado
 
 class CV_Miguel_DelgadoTests: XCTestCase {
 
