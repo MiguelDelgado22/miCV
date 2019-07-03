@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource{
+extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource, ExperiencePresenterDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return infoExperience?.count ?? TableInformationViewData.numeroOfOptional.rawValue
@@ -35,8 +35,3 @@ extension ExperienceViewController: UITableViewDelegate, UITableViewDataSource{
     }
 }
 
-
-
-extension ExperienceViewController: ExperiencePresenterDelegate{
-    
-}

@@ -15,13 +15,6 @@ class ExperienceTableViewCell: UITableViewCell {
     @IBOutlet weak var lbRole: UILabel?
     @IBOutlet weak var lbDescription: UILabel?
     @IBOutlet weak var img: UIImageView?
-    
-    
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
     func updateUI(infoExperience: Experience) {
         self.lbName?.text = infoExperience.name
@@ -30,11 +23,4 @@ class ExperienceTableViewCell: UITableViewCell {
         self.lbDescription?.text = infoExperience.descripcion
         self.img?.image = UIImage(named: infoExperience.image)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

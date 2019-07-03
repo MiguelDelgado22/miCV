@@ -9,7 +9,7 @@
 import Foundation
 
 
-class InfoHelpers: NSObject {
+class InfoHelper: NSObject {
     //Download cambia el nombre
     func myInfo(completionHandler: @escaping(DownloadResult)-> Void){
         ApiService().makeRequest(with: URLSession.shared) { (response) in
