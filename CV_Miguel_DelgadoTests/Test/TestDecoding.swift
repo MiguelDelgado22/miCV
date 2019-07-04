@@ -25,7 +25,7 @@ class TestDecoding: XCTestCase, TestingJSON {
         XCTAssertNil(parseData)
     }
     
-    func testParseNilData() {
+    func testParseDataNil() {
         var parseData: InformationResponseModel?
         let data = Data()
         parseData = try? JSONDecoder().decode(InformationResponseModel.self, from: data)
