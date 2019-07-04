@@ -16,7 +16,7 @@
 //MARK: - Strings for alerts
 "error" = "Error!";
 "ok" = "OK";
-"Please, try again." =  "Please try again.";
+"tryAgain" =  "Please try again.";
 
 //MARK: - Strings for titles
 "experience" = "Experience";

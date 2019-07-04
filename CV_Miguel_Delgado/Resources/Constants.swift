@@ -65,7 +65,7 @@ enum AlertError: String {
     case error = "error"
     case accept = "Reload"
     case again = "repeat"
-    case notInternet = "Please, try again."
+    case notInternet = "tryAgain"
 }
 
 //MARK: - Strings for titles
