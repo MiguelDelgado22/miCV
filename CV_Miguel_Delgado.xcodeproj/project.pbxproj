@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		36E8C7FC22CD26A700DF7891 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 36E8C7FB22CD26A700DF7891 /* Localizable.strings */; };
 		36E8C80222CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80122CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift */; };
-		36E8C80422CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80322CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift */; };
 		36E8C81F22CDA04D00DF7891 /* information.json in Resources */ = {isa = PBXBuildFile; fileRef = C76B17FF22C3F69300D8D2CD /* information.json */; };
 		36E8C82022CDA05100DF7891 /* corruptInformation.json in Resources */ = {isa = PBXBuildFile; fileRef = 36E8C80822CD513700DF7891 /* corruptInformation.json */; };
 		36E8C82122CDA05500DF7891 /* MockingURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80C22CD780000DF7891 /* MockingURL.swift */; };
@@ -40,6 +39,7 @@
 		C7FD563B22C5D18C005CC59D /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563A22C5D18C005CC59D /* NetworkProtocols.swift */; };
 		C7FD564022C5EA74005CC59D /* InfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563F22C5EA74005CC59D /* InfoHelper.swift */; };
 		DB05FF5622CD7C36000886AD /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05FF5522CD7C36000886AD /* NavigationPresenter.swift */; };
+		DB05FF5B22CE5075000886AD /* TestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05FF5A22CE5075000886AD /* TestPresenter.swift */; };
 		DB1D88A122CD2A92008E73AD /* ExtensionViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */; };
 		DB1D88A322CD2B08008E73AD /* InformationViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A222CD2B08008E73AD /* InformationViewController+UITableView.swift */; };
 		DB1D88A522CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1D88A422CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift */; };
@@ -67,7 +67,6 @@
 		36E8C7FB22CD26A700DF7891 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		36E8C7FE22CD47C500DF7891 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		36E8C80122CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsInformationPresenter.swift; sourceTree = "<group>"; };
-		36E8C80322CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsExperiencePresenter.swift; sourceTree = "<group>"; };
 		36E8C80822CD513700DF7891 /* corruptInformation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = corruptInformation.json; sourceTree = "<group>"; };
 		36E8C80C22CD780000DF7891 /* MockingURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingURL.swift; sourceTree = "<group>"; };
 		36E8C80E22CD78D900DF7891 /* MockingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingSession.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		C7FD564622C6B665005CC59D /* MockConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnectionTest.swift; sourceTree = "<group>"; };
 		C7FD564822C6B78B005CC59D /* MockConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnection.swift; sourceTree = "<group>"; };
 		DB05FF5522CD7C36000886AD /* NavigationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
+		DB05FF5A22CE5075000886AD /* TestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
 		DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionViewController+UITableView.swift"; sourceTree = "<group>"; };
 		DB1D88A222CD2B08008E73AD /* InformationViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InformationViewController+UITableView.swift"; sourceTree = "<group>"; };
 		DB1D88A422CD2B87008E73AD /* InformationViewController+PresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InformationViewController+PresenterDelegate.swift"; sourceTree = "<group>"; };
@@ -149,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				36E8C80122CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift */,
-				36E8C80322CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -187,6 +186,7 @@
 				36E8C81622CD7E3F00DF7891 /* TestNetwork.swift */,
 				36E8C81A22CD942B00DF7891 /* TestDecoding.swift */,
 				36E8C81C22CD94D900DF7891 /* TestURLSession.swift */,
+				DB05FF5A22CE5075000886AD /* TestPresenter.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -535,7 +535,6 @@
 				C76B17FD22C3F1D600D8D2CD /* InformationPresenter.swift in Sources */,
 				C7FD563922C5902A005CC59D /* ApiService.swift in Sources */,
 				DBFF1C6F22CD62BD00116CAF /* NavigationController.swift in Sources */,
-				36E8C80422CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift in Sources */,
 				C76B180722C417BA00D8D2CD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,6 +557,7 @@
 				36E8C82622CDA06500DF7891 /* TestDecoding.swift in Sources */,
 				36E8C82222CDA05700DF7891 /* MockingSession.swift in Sources */,
 				36E8C82522CDA06300DF7891 /* TestNetwork.swift in Sources */,
+				DB05FF5B22CE5075000886AD /* TestPresenter.swift in Sources */,
 				36E8C82422CDA06000DF7891 /* ProtocolsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
