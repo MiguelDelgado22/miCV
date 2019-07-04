@@ -69,9 +69,9 @@ enum DownloadResult {
 //MARK: - Strings for alert controller
 enum AlertError: String {
     case error = "error"
-    case acept = "ok"
+    case accept = "Reload"
     case again = "repeat"
-    case notInternet = "notConnection"
+    case notInternet = "Please, try again."
 }
 
 //MARK: - Strings for titles
