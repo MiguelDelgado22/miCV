@@ -29,4 +29,8 @@ class InformationPresenter {
     func getInformation() -> InformationResponseModel? {
         return responseInfo
     }
+    
+    func getExperiences() -> [Experience]? {
+        return getInformation()?.experience
+    }
 }

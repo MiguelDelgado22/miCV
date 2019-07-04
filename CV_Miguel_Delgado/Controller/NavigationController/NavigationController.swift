@@ -10,7 +10,7 @@ import UIKit
 
 class NavigationController: UINavigationController {
     var presenterNavigation: NavigationPresenter?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -23,10 +23,13 @@ extension NavigationController: UINavigationControllerDelegate {
             controller.presenterInformation == nil {
             controller.presenterInformation = presenterNavigation?.createInformationPresenter()
         }
-        
+
         if let controller = viewController as? ExperienceViewController,
             controller.presenterExperience == nil {
-            controller.presenterExperience = presenterNavigation?.createExperiencePresenter()
+            let informationController = viewControllers.first as? InformationViewController
+        
+            controller.presenterExperience = presenterNavigation?.createExperiencePresenter(from:
+                informationController?.presenterInformation)
         }
     }
 }
