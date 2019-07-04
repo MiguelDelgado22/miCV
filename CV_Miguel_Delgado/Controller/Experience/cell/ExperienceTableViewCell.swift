@@ -22,21 +22,16 @@ class ExperienceTableViewCell: UITableViewCell {
         self.lbRole?.text = infoExperience.role
         self.lbDescription?.text = infoExperience.descripcion
         
-        if let url = URL(string: infoExperience.image ){
-        InfoHelper().downloadImg(urlImage: url) { (response) in
+        InfoHelper().downloadImg(urlImage: infoExperience.image) { (response) in
             switch response{
             case .success(let data):
-                    DispatchQueue.main.async() {
-                        self.img?.image = UIImage(data: data)
-                    }
+                DispatchQueue.main.async() {
+                    self.img?.image = UIImage(data: data)
+                }
                 break
             default:
                 break
-                }
             }
         }
-        
-        
     }
-  
 }

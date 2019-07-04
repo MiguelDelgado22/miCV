@@ -20,12 +20,8 @@ class InformationPresenter {
                     self.responseInfo = myInfo
                     self.delegate?.informationPersonal(response: myInfo)
                 }
-                break
             case .fatal:
                 self.delegate?.errorInWebServices(error: AlertError.again.rawValue)
-                break
-            case .notFound:
-                self.delegate?.errorNotFound(error: AlertError.notInternet.rawValue)
             }
         }
     }

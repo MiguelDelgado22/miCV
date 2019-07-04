@@ -17,37 +17,24 @@ class InfoHelper: NSObject {
      - completionHandler: A closure that need be defined by the caller to manipulate the data
      */
     func myInfo(completionHandler: @escaping(DownloadResult) -> Void) {
-        ApiService().makeRequest(with: URLSession.shared) { (response) in
+        ApiService().makeRequest { (response) in
             switch response {
             case .success(let data):
                 completionHandler(.success(data:data))
-                break
             case .fatal(let fatal):
                 completionHandler(.fatal(error: fatal))
-                break
-            case .notFound(let notFound):
-                completionHandler(.notFound(error: notFound))
-            default:
-                break
             }
         }
     }
     
-    func downloadImg(urlImage: URL, completionHandler: @escaping(DownloadResult) -> Void){
-        ApiService().downloadImage(with: URLSession.shared, urlDownload: urlImage) { (response) in
-            switch response{
+    func downloadImg(urlImage: String, completionHandler: @escaping(DownloadResult) -> Void){
+        ApiService().makeRequest(from: urlImage) { (response) in
+            switch response {
             case .success(let data):
-                completionHandler(.success(data: data))
-                break
+                completionHandler(.success(data:data))
             case .fatal(let fatal):
                 completionHandler(.fatal(error: fatal))
-                break
-            case .notFound(let notFound):
-                completionHandler(.notFound(error: notFound))
-            default:
-                break
             }
         }
-        
     }
 }
