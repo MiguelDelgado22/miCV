@@ -5,12 +5,12 @@ final class ApiService: ApiServiceProtocol {
     private let session: URLSessionTasking
     private var task: URLSessionDataTask?
     
-    // MARK: Init Api service
+    //MARK: Init Api service
     init(session: URLSessionTasking = URLSession.shared) {
         self.session = session
     }
     
-    // MARK: Make a request method
+    //MARK: Make a request method
     /**
      Get the data from main url
      
