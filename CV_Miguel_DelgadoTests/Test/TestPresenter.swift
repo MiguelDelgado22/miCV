@@ -36,7 +36,7 @@ class TestPresenter: XCTestCase, TestingJSON {
         session.data = testingJSON
         session.error = nil
         session.response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
-        informationPresenter.myInformation(ApiService(session: session))
+        informationPresenter.setInformation(ApiService(session: session))
         
         let experiencePresenter = navigationPresenter.createExperiencePresenter(from: informationPresenter)
         
