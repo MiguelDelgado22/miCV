@@ -9,7 +9,7 @@
 import Foundation
 
 protocol ApiServiceProtocol {
-    func makeRequest( with router: URLSessionTasking, completionHandler:@escaping(_ response: ApiServiceState) -> Void)
+    func makeRequest(from path: String, completionHandler:@escaping(_ response: ApiServiceState) -> Void)
 }
 
 protocol URLSessionTasking {

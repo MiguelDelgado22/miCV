@@ -49,10 +49,8 @@ enum SizeFont: Double {
 }
 
 //MARK: - Status for api service
-enum ApiServiceState: Error {
-    case network(error: Error)
-    case notFound(reason: String)
-    case fatal(reason: String)
+enum ApiServiceState {
+    case fatal(error: Error)
     case success(response: Data)
 }
 
@@ -65,8 +63,7 @@ enum HttpStatusCode: Int {
 //MARK: - Status for download result
 enum DownloadResult {
     case success(data: Data)
-    case notFound(error: String)
-    case fatal(error: String)
+    case fatal(error: Error)
 }
 
 //MARK: - Strings for alert controller
