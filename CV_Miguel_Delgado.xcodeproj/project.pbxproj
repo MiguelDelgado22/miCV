@@ -20,7 +20,7 @@
 		C76B17FA22C3F1AE00D8D2CD /* LabelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B17F822C3F1AE00D8D2CD /* LabelsTableViewCell.swift */; };
 		C76B17FB22C3F1AE00D8D2CD /* LabelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76B17F922C3F1AE00D8D2CD /* LabelsTableViewCell.xib */; };
 		C76B17FD22C3F1D600D8D2CD /* InformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B17FC22C3F1D600D8D2CD /* InformationPresenter.swift */; };
-		C76B180022C3F69300D8D2CD /* Information.json in Resources */ = {isa = PBXBuildFile; fileRef = C76B17FF22C3F69300D8D2CD /* Information.json */; };
+		C76B180022C3F69300D8D2CD /* information.json in Resources */ = {isa = PBXBuildFile; fileRef = C76B17FF22C3F69300D8D2CD /* information.json */; };
 		C76B180222C3FD0D00D8D2CD /* InformationResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B180122C3FD0D00D8D2CD /* InformationResponseModel.swift */; };
 		C76B180722C417BA00D8D2CD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B180622C417BA00D8D2CD /* Constants.swift */; };
 		C76B182722C4232200D8D2CD /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B182622C4232200D8D2CD /* ExperienceViewController.swift */; };
@@ -64,8 +64,11 @@
 		36E8C7FE22CD47C500DF7891 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		36E8C80122CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsInformationPresenter.swift; sourceTree = "<group>"; };
 		36E8C80322CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsExperiencePresenter.swift; sourceTree = "<group>"; };
-		36E8C80822CD513700DF7891 /* FailInformation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FailInformation.json; sourceTree = "<group>"; };
-		36E8C80922CD517D00DF7891 /* MockingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingProtocols.swift; sourceTree = "<group>"; };
+		36E8C80822CD513700DF7891 /* corruptInformation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = corruptInformation.json; sourceTree = "<group>"; };
+		36E8C80C22CD780000DF7891 /* MockingURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingURL.swift; sourceTree = "<group>"; };
+		36E8C80E22CD78D900DF7891 /* MockingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingSession.swift; sourceTree = "<group>"; };
+		36E8C81022CD79A500DF7891 /* MockingDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingDataTask.swift; sourceTree = "<group>"; };
+		36E8C81322CD7A3E00DF7891 /* ProtocolsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsTest.swift; sourceTree = "<group>"; };
 		C76B17D822C3E9CF00D8D2CD /* CV_Miguel_Delgado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_Miguel_Delgado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B17DB22C3E9CF00D8D2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B17E222C3E9CF00D8D2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,7 +79,7 @@
 		C76B17F822C3F1AE00D8D2CD /* LabelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsTableViewCell.swift; sourceTree = "<group>"; };
 		C76B17F922C3F1AE00D8D2CD /* LabelsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelsTableViewCell.xib; sourceTree = "<group>"; };
 		C76B17FC22C3F1D600D8D2CD /* InformationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationPresenter.swift; sourceTree = "<group>"; };
-		C76B17FF22C3F69300D8D2CD /* Information.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Information.json; sourceTree = "<group>"; };
+		C76B17FF22C3F69300D8D2CD /* information.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = information.json; sourceTree = "<group>"; };
 		C76B180122C3FD0D00D8D2CD /* InformationResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationResponseModel.swift; sourceTree = "<group>"; };
 		C76B180622C417BA00D8D2CD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C76B182622C4232200D8D2CD /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +92,6 @@
 		C7FD561422C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_Miguel_DelgadoUITests.swift; sourceTree = "<group>"; };
 		C7FD561622C55D24005CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FD562022C56477005CC59D /* CV_Miguel_DelgadoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CV_Miguel_DelgadoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7FD562222C56477005CC59D /* CV_Miguel_DelgadoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_Miguel_DelgadoTests.swift; sourceTree = "<group>"; };
 		C7FD562422C56477005CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FD563822C5902A005CC59D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C7FD563A22C5D18C005CC59D /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
@@ -145,22 +147,38 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		36E8C80622CD50F500DF7891 /* Mocks */ = {
+		36E8C80622CD50F500DF7891 /* Mocking */ = {
 			isa = PBXGroup;
 			children = (
-				C7FD564822C6B78B005CC59D /* MockConnection.swift */,
-				36E8C80922CD517D00DF7891 /* MockingProtocols.swift */,
+				36E8C80C22CD780000DF7891 /* MockingURL.swift */,
+				36E8C80E22CD78D900DF7891 /* MockingSession.swift */,
+				36E8C81022CD79A500DF7891 /* MockingDataTask.swift */,
 			);
-			path = Mocks;
+			path = Mocking;
 			sourceTree = "<group>";
 		};
 		36E8C80722CD510D00DF7891 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C76B17FF22C3F69300D8D2CD /* Information.json */,
-				36E8C80822CD513700DF7891 /* FailInformation.json */,
+				C76B17FF22C3F69300D8D2CD /* information.json */,
+				36E8C80822CD513700DF7891 /* corruptInformation.json */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		36E8C81222CD79F700DF7891 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				36E8C81322CD7A3E00DF7891 /* ProtocolsTest.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		36E8C81522CD7DD100DF7891 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		C76B17CF22C3E9CF00D8D2CD = {
@@ -310,9 +328,9 @@
 			isa = PBXGroup;
 			children = (
 				36E8C80722CD510D00DF7891 /* Sources */,
-				36E8C80622CD50F500DF7891 /* Mocks */,
-				C7FD564622C6B665005CC59D /* MockConnectionTest.swift */,
-				C7FD562222C56477005CC59D /* CV_Miguel_DelgadoTests.swift */,
+				36E8C80622CD50F500DF7891 /* Mocking */,
+				36E8C81222CD79F700DF7891 /* Protocols */,
+				36E8C81522CD7DD100DF7891 /* Test */,
 				C7FD562422C56477005CC59D /* Info.plist */,
 			);
 			path = CV_Miguel_DelgadoTests;
@@ -448,7 +466,7 @@
 			files = (
 				C76B17E822C3E9CF00D8D2CD /* LaunchScreen.storyboard in Resources */,
 				C76B182E22C425C500D8D2CD /* experienceTableViewCell.xib in Resources */,
-				C76B180022C3F69300D8D2CD /* Information.json in Resources */,
+				C76B180022C3F69300D8D2CD /* information.json in Resources */,
 				C76B17E522C3E9CF00D8D2CD /* Assets.xcassets in Resources */,
 				C76B17FB22C3F1AE00D8D2CD /* LabelsTableViewCell.xib in Resources */,
 				36E8C7FC22CD26A700DF7891 /* Localizable.strings in Resources */,

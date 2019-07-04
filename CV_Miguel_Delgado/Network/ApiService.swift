@@ -17,7 +17,7 @@ class ApiService: ApiServiceProtocol {
      - router: A URLSessionTask
      - completitionHandler: A closure that need be defined by the caller to manipulate the data
      */
-    func makeRequest( with router: URLSessionTask, completionHandler:@escaping(_ response: ApiServiceState) -> Void) {
+    func makeRequest( with router: URLSessionTasking, completionHandler:@escaping(_ response: ApiServiceState) -> Void) {
         guard let stringURL = Config.setUrlAsString(for: StaticURL.mainURL.rawValue) else { return }
         if let url = URL(string: stringURL) {
             router.dataTask(with: url) { (data, response, _) in
@@ -40,7 +40,7 @@ class ApiService: ApiServiceProtocol {
         }
     }
     
-    func downloadImage( with router: URLSessionTask, urlDownload: URL, completionHandler:@escaping(_ response: ApiServiceState) -> Void){
+    func downloadImage( with router: URLSessionTasking, urlDownload: URL, completionHandler:@escaping(_ response: ApiServiceState) -> Void){
         router.dataTask(with: urlDownload) { (data, response, error) in
             if let response = response as? HTTPURLResponse, let data = data{
                 if response.statusCode == NSURLErrorNotConnectedToInternet {
