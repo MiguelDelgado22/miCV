@@ -19,14 +19,60 @@ class TestNetwork: XCTestCase {
         let session = MockingSession()
         session.response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
         
-        let expectation = XCTestExpectation(description: "Request Service")
+        let expectation = XCTestExpectation(description: "Request service valid URL")
         service = ApiService(session: session)
         
         service.makeRequest(from: validURL) { (response) in
             switch response {
             case .success(response: _):
                 expectation.fulfill()
-            default:
+            case .fatal(error: _):
+                XCTFail()
+                expectation.fulfill()
+            }
+        }
+        wait(for: [expectation], timeout: 5)
+    }
+    
+    func testInvalidURLRequest() {
+        let service: ApiService
+        let invalidURL = StaticURL.invalidURL.rawValue
+        guard let url = URL(string: invalidURL) else { return }
+        
+        let session = MockingSession()
+        session.response = HTTPURLResponse(url: url, statusCode: 400, httpVersion: nil, headerFields: nil)
+        
+        let expectation = XCTestExpectation(description: "Request service invalid URL")
+        service = ApiService(session: session)
+        
+        service.makeRequest(from: invalidURL) { (response) in
+            switch response {
+            case .fatal(error: _):
+                expectation.fulfill()
+            case .success(response: _):
+                XCTFail()
+                expectation.fulfill()
+            }
+        }
+        wait(for: [expectation], timeout: 5)
+    }
+    
+    func testNOInternetConnection() {
+        let service: ApiService
+        let validURL = StaticURL.validURL.rawValue
+        guard let url = URL(string: validURL) else { return }
+        
+        let session = MockingSession()
+        session.response = HTTPURLResponse(url: url, statusCode: 0, httpVersion: nil, headerFields: nil)
+        
+        let expectation = XCTestExpectation(description: "Request service no internet connection")
+        service = ApiService(session: session)
+        
+        service.makeRequest(from: validURL) { (response) in
+            switch response {
+            case .fatal(error: _):
+                expectation.fulfill()
+            case .success(response: _):
                 XCTFail()
                 expectation.fulfill()
             }

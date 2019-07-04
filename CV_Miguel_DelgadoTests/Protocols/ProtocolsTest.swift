@@ -10,7 +10,7 @@ import XCTest
 @testable import CV_Miguel_Delgado
 
 protocol TestingJSON {
-    func dataFromJSON(of file: String) -> Data
+    func dataFromJSON(file: String) -> Data
 }
 
 protocol TestingModel {

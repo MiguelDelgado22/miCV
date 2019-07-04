@@ -70,6 +70,8 @@
 		36E8C81022CD79A500DF7891 /* MockingDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingDataTask.swift; sourceTree = "<group>"; };
 		36E8C81322CD7A3E00DF7891 /* ProtocolsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolsTest.swift; sourceTree = "<group>"; };
 		36E8C81622CD7E3F00DF7891 /* TestNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetwork.swift; sourceTree = "<group>"; };
+		36E8C81A22CD942B00DF7891 /* TestDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDecoding.swift; sourceTree = "<group>"; };
+		36E8C81C22CD94D900DF7891 /* TestURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestURLSession.swift; sourceTree = "<group>"; };
 		C76B17D822C3E9CF00D8D2CD /* CV_Miguel_Delgado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_Miguel_Delgado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B17DB22C3E9CF00D8D2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B17E222C3E9CF00D8D2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				36E8C81622CD7E3F00DF7891 /* TestNetwork.swift */,
+				36E8C81A22CD942B00DF7891 /* TestDecoding.swift */,
+				36E8C81C22CD94D900DF7891 /* TestURLSession.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
