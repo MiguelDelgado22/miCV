@@ -13,7 +13,7 @@ class ExperienceViewController: BaseViewController {
         super.viewDidLoad()
         self.configureTableView(tbContenedor)
         
-        navigationItem.title = NSLocalizedString(Title.experience.rawValue, comment: "")
+        navigationItem.title = NSLocalizedString(Title.experience.rawValue, comment: Comment.titleExperience.rawValue)
     }
     
     private func configureTableView(_ tableView: UITableView?) {

@@ -8,7 +8,7 @@ final class InfoHelper: NSObject {
         self.service = service
     }
     
-    // MARK: My info method
+    //MARK: My info method
     /**
      Get a DownloadResult
      

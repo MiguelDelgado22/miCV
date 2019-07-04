@@ -10,7 +10,7 @@ class CV_Miguel_DelgadoUITests: XCTestCase {
         XCUIApplication().launch()
     }
     
-    func test0ScreenInformation() {
+    func testScreenInformation() {
         XCTAssert(app.images["imagePerfil"].exists)
         XCTAssert(app.tables.staticTexts["lbName"].exists)
         XCTAssert(app.tables.staticTexts["lbCity"].exists)
@@ -20,7 +20,7 @@ class CV_Miguel_DelgadoUITests: XCTestCase {
         XCTAssert(app.buttons["btoExperience"].exists)
     }
     
-    func test1ButtonFuntionExperience() {
+    func testButtonFuntionExperience() {
         XCTAssert(app.tables.staticTexts["lbName"].exists)
         app.buttons["Experience"].tap()
         XCTAssert(app.navigationBars["Experience"].exists)
@@ -28,7 +28,7 @@ class CV_Miguel_DelgadoUITests: XCTestCase {
         XCTAssert(app.navigationBars["Information"].exists)
     }
     
-    func test2CheckScreenExperience(){
+    func testCheckScreenExperience(){
         app.buttons["Experience"].tap()
         if  app.tables.cells.count == 0 {
             XCTFail()

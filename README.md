@@ -22,6 +22,7 @@ Taken list-detail flow as flow base, I show a short summary about me and my iOS 
 + Unit Test
     + The networking test use a mocking session
     + Test decode information from a json file valid and invalid
+    + Test URLSession using mocks
     + Test presenter of the views
     
 + UI Test

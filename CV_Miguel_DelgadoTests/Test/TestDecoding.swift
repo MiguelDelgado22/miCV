@@ -3,17 +3,17 @@ import XCTest
 @testable import CV_Miguel_Delgado
 
 class TestDecoding: XCTestCase, TestingJSON {
-    // MARK: Parse method testing
+    //MARK: Parse method testing
     func testParseDataFromValidJSON() {
         var parseData: InformationResponseModel?
-        let data = dataFromJSON(file: "information")
+        let data = dataFromJSON(file: SourceFile.information.rawValue)
         parseData = try? JSONDecoder().decode(InformationResponseModel.self, from: data)
         XCTAssertNotNil(parseData)
     }
     
     func testParseDataFromInvalidJSON() {
         var parseData: InformationResponseModel?
-        let data = dataFromJSON(file: "corruptInformation")
+        let data = dataFromJSON(file: SourceFile.corruptInformation.rawValue)
         parseData = try? JSONDecoder().decode(InformationResponseModel.self, from: data)
         XCTAssertNil(parseData)
     }

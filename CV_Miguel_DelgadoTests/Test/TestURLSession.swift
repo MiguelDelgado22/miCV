@@ -7,11 +7,11 @@ class TestURLSession: XCTestCase, TestingJSON {
     func testNetworkingSessionSuccess() {
         let service: ApiService
         let session = MockingSession()
-        session.data = dataFromJSON(file: "information")
-        session.response = HTTPURLResponse(url: URL(fileURLWithPath: "information.json"), statusCode: 200, httpVersion: nil, headerFields: nil)
+        session.data = dataFromJSON(file: SourceFile.information.rawValue)
+        session.response = HTTPURLResponse(url: URL(fileURLWithPath: Files.correctURL.rawValue), statusCode: 200, httpVersion: nil, headerFields: nil)
         
         
-        let expectation = XCTestExpectation(description: "Test a correct URLSession")
+        let expectation = XCTestExpectation(description: ExpectationDescription.testNetworkingSessionSuccess.rawValue)
         service = ApiService(session: session)
         
         service.makeRequest { (response) in
@@ -30,10 +30,10 @@ class TestURLSession: XCTestCase, TestingJSON {
         let service: ApiService
         let session = MockingSession()
         session.data = nil
-        session.response = HTTPURLResponse(url: URL(fileURLWithPath: "information.json"), statusCode: 200, httpVersion: nil, headerFields: nil)
+        session.response = HTTPURLResponse(url: URL(fileURLWithPath: Files.correctURL.rawValue), statusCode: 200, httpVersion: nil, headerFields: nil)
         
         
-        let expectation = XCTestExpectation(description: "Test a incorrect URLSession with data nil")
+        let expectation = XCTestExpectation(description: ExpectationDescription.testNetworkingSessionFailureDataNil.rawValue)
         service = ApiService(session: session)
         
         service.makeRequest { (response) in
@@ -51,10 +51,10 @@ class TestURLSession: XCTestCase, TestingJSON {
         let service: ApiService
         let session = MockingSession()
         session.data = Data()
-        session.response = HTTPURLResponse(url: URL(fileURLWithPath: "badURL.json"), statusCode: 404, httpVersion: nil, headerFields: nil)
+        session.response = HTTPURLResponse(url: URL(fileURLWithPath: Files.badURL.rawValue), statusCode: 404, httpVersion: nil, headerFields: nil)
         
         
-        let expectation = XCTestExpectation(description: "Test a incorrect URLSession with an invalid URL")
+        let expectation = XCTestExpectation(description: ExpectationDescription.testNetworkingSessionFailureBadURL.rawValue)
         service = ApiService(session: session)
         
         service.makeRequest { (response) in
@@ -72,7 +72,7 @@ class TestURLSession: XCTestCase, TestingJSON {
         let service: ApiService
         let session = MockingSession()
         
-        let expectation = XCTestExpectation(description: "Test a incorrect URLSession without response")
+        let expectation = XCTestExpectation(description: ExpectationDescription.testNetworkingSessionFailureNoResponse.rawValue)
         service = ApiService(session: session)
         
         service.makeRequest { (response) in

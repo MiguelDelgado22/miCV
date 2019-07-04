@@ -17,9 +17,9 @@ extension InformationViewController: InformationPresenterDelegate {
     }
     
     func showAlertError(error: String) {
-        let alert = UIAlertController(title: NSLocalizedString(AlertError.error.rawValue, comment: ""), message: NSLocalizedString(error, comment: ""), preferredStyle: .alert)
+        let alert = UIAlertController(title: NSLocalizedString(AlertError.error.rawValue, comment: Comment.error.rawValue), message: NSLocalizedString(error, comment: Comment.messageError.rawValue), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title:
-            NSLocalizedString(AlertError.accept.rawValue, comment: ""), style: .default, handler: { action in
+            NSLocalizedString(AlertError.accept.rawValue, comment: Comment.accept.rawValue), style: .default, handler: { action in
              self.activity.isHidden = false
             self.presenterInformation?.myInformation()
         }))
