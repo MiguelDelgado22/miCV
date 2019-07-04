@@ -8,7 +8,7 @@ final class InformationViewController: BaseViewController {
     var presenterInformation: InformationPresenter? {
         didSet {
             presenterInformation?.delegate = self
-            presenterInformation?.myInformation()
+            presenterInformation?.setInformation()
             self.tbContainer?.reloadData()
         }
     }
@@ -27,7 +27,7 @@ final class InformationViewController: BaseViewController {
         activity.startAnimating()   
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: NameOfCells.viewControllerInformations.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformations.rawValue )
+        tableView.register(UINib(nibName: NameOfCells.viewControllerInformation.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformation.rawValue )
     }
 }
 

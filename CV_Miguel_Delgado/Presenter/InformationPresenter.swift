@@ -5,9 +5,9 @@ final class InformationPresenter {
     weak var delegate: InformationPresenterDelegate?
     private var responseInfo: InformationResponseModel?
     
-    func myInformation(_ service: ApiService = ApiService()) {
-        InfoHelper(service).myInfo { [weak self] (responseData) in
-            
+    func setInformation(_ service: ApiService = ApiService()) {
+        InfoHelper(service).getInfo { [weak self] (responseData) in
+
             switch responseData {
             case .success(let dataResponse):
                 if let myInfo = try? JSONDecoder().decode(InformationResponseModel.self, from: dataResponse) {
