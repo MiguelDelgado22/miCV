@@ -1,8 +1,9 @@
+
 import Foundation
 
-class ApiService: ApiServiceProtocol {
-    let session: URLSessionTasking
-    var task: URLSessionDataTask?
+final class ApiService: ApiServiceProtocol {
+    private let session: URLSessionTasking
+    private var task: URLSessionDataTask?
     
     // MARK: Init Api service
     init(session: URLSessionTasking = URLSession.shared) {

@@ -1,7 +1,7 @@
+
 import UIKit
 
-class LabelsTableViewCell: UITableViewCell {
-
+final class LabelsTableViewCell: UITableViewCell {
     @IBOutlet weak var lbName: UILabel?
     @IBOutlet weak var lbCity: UILabel?
     @IBOutlet weak var lbNumber: UILabel?
@@ -17,5 +17,4 @@ class LabelsTableViewCell: UITableViewCell {
         lbBirthday?.text = responseInformation?.birthday
         lbObjective?.text = responseInformation?.objective
     }
-
 }

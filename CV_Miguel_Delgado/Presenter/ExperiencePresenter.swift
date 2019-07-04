@@ -1,6 +1,7 @@
+
 import Foundation
 
-class ExperiencePresenter {
+final class ExperiencePresenter {
     private var infoExperience: [Experience]?
     var experienceAmount: Int {
         return infoExperience?.count ?? 0

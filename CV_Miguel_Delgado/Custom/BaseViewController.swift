@@ -1,18 +1,16 @@
+
 import UIKit
 
 class BaseViewController: UIViewController {
-    
     var contentView: UIImageView?
     var labelTitulo: UILabel?
-    
-    @IBInspectable var TitleViewController: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configBase()
     }
     
-    func configBase() {
+    private func configBase() {
         let screenSize: CGRect = UIScreen.main.bounds
         let positionXY = BaseData.positionXYcontentView.rawValue
         
