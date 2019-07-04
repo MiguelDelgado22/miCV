@@ -17,7 +17,7 @@ final class InformationViewController: BaseViewController {
         super.viewDidLoad()
 
         configureTableView(tbContainer)
-        navigationItem.title = NSLocalizedString(Title.information.rawValue, comment: "")
+        navigationItem.title = NSLocalizedString(Title.information.rawValue, comment: Comment.titleInformation.rawValue)
     }
     
     private func configureTableView(_ tableView: UITableView?) {

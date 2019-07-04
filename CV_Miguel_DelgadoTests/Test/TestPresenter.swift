@@ -28,7 +28,7 @@ class TestPresenter: XCTestCase, TestingJSON {
     func testModelExperienceInjection() {
         let navigationPresenter = NavigationPresenter()
         let informationPresenter = navigationPresenter.createInformationPresenter()
-        let testingJSON = dataFromJSON(file: "information")
+        let testingJSON = dataFromJSON(file: SourceFile.information.rawValue)
         let session = MockingSession()
         let validURL = StaticURL.validURL.rawValue
         guard let url = URL(string: validURL) else { return }

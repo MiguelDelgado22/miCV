@@ -81,3 +81,22 @@ enum Config {
         return (Bundle.main.infoDictionary?[key] as? String)
     }
 }
+
+//MARK: - Enum for the names of the storyboards
+enum Storyboard: String {
+    case main = "Main"
+}
+
+//MARK: - Enum for the names of the controllers
+enum Controller: String {
+    case navigationController = "NavigationController"
+}
+
+//MARK: - Strings for the comment at localized
+enum Comment: String {
+    case titleInformation = "Title information"
+    case  error = "Error alert"
+    case messageError = "Message of error"
+    case accept = "Accept action"
+    case titleExperience = "Title experience"
+}
