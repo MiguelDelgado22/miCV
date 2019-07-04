@@ -1,5 +1,5 @@
 import XCTest
-@testable import CV_Miguel_Delgado
+@testable import Globant5CV
 
 class TestPresenter: XCTestCase, TestingJSON {
     func testPresenterCreation() {

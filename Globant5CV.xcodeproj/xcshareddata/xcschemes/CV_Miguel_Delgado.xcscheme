@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C76B17D722C3E9CF00D8D2CD"
-               BuildableName = "CV_Miguel_Delgado.app"
-               BlueprintName = "CV_Miguel_Delgado"
-               ReferencedContainer = "container:CV_Miguel_Delgado.xcodeproj">
+               BuildableName = "Globant5CV.app"
+               BlueprintName = "Globant5CV"
+               ReferencedContainer = "container:Globant5CV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C7FD561122C55D24005CC59D"
-               BuildableName = "CV_Miguel_DelgadoUITests.xctest"
-               BlueprintName = "CV_Miguel_DelgadoUITests"
-               ReferencedContainer = "container:CV_Miguel_Delgado.xcodeproj">
+               BuildableName = "Globant5CVUITests.xctest"
+               BlueprintName = "Globant5CVUITests"
+               ReferencedContainer = "container:Globant5CV.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C7FD561F22C56477005CC59D"
-               BuildableName = "CV_Miguel_DelgadoTests.xctest"
-               BlueprintName = "CV_Miguel_DelgadoTests"
-               ReferencedContainer = "container:CV_Miguel_Delgado.xcodeproj">
+               BuildableName = "Globant5CVTests.xctest"
+               BlueprintName = "Globant5CVTests"
+               ReferencedContainer = "container:Globant5CV.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -54,9 +54,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C76B17D722C3E9CF00D8D2CD"
-            BuildableName = "CV_Miguel_Delgado.app"
-            BlueprintName = "CV_Miguel_Delgado"
-            ReferencedContainer = "container:CV_Miguel_Delgado.xcodeproj">
+            BuildableName = "Globant5CV.app"
+            BlueprintName = "Globant5CV"
+            ReferencedContainer = "container:Globant5CV.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C76B17D722C3E9CF00D8D2CD"
-            BuildableName = "CV_Miguel_Delgado.app"
-            BlueprintName = "CV_Miguel_Delgado"
-            ReferencedContainer = "container:CV_Miguel_Delgado.xcodeproj">
+            BuildableName = "Globant5CV.app"
+            BlueprintName = "Globant5CV"
+            ReferencedContainer = "container:Globant5CV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C76B17D722C3E9CF00D8D2CD"
-            BuildableName = "CV_Miguel_Delgado.app"
-            BlueprintName = "CV_Miguel_Delgado"
-            ReferencedContainer = "container:CV_Miguel_Delgado.xcodeproj">
+            BuildableName = "Globant5CV.app"
+            BlueprintName = "Globant5CV"
+            ReferencedContainer = "container:Globant5CV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

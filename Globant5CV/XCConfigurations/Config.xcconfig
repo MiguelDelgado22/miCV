@@ -1,6 +1,6 @@
 //MARK: - Configurations for the app
-APPNAME = MyCV
-APPBUNDLE = miguel.CVMiguelDelgado
+APPNAME = Globant5CV
+APPBUNDLE = com.Globant5CV
 APPVERSION = 1.0
 
 //MARK: - Main URL

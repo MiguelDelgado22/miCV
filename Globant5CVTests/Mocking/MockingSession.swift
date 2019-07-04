@@ -1,6 +1,6 @@
 
 import Foundation
-@testable import CV_Miguel_Delgado
+@testable import Globant5CV
 
 class MockingSession: URLSessionTasking {
     var data: Data?

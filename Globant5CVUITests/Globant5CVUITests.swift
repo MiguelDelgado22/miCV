@@ -1,7 +1,7 @@
 
 import XCTest
 
-class CV_Miguel_DelgadoUITests: XCTestCase {
+class Globant5CVUITests: XCTestCase {
 
     let app = XCUIApplication()
     
