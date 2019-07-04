@@ -3,7 +3,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
     var contentView: UIImageView?
-    var labelTitulo: UILabel?
+    var lbTitle: UILabel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -14,10 +14,10 @@ class BaseViewController: UIViewController {
         let screenSize: CGRect = UIScreen.main.bounds
         let positionXY = BaseData.positionXYcontentView.rawValue
         
-        let imageBackground = UIImage(named: NameOfImage.IMG_BACKGROUND_SCREEN.rawValue)
+        let imageBackground = UIImage(named: NameOfImage.imgBackgroundScreen.rawValue)
 
         contentView = UIImageView(image: imageBackground)
-        labelTitulo = UILabel.init(frame: CGRect.init(x: BaseData.positionXYcontentView.rawValue, y: BaseData.labelPositionY.rawValue, width: Double(screenSize.size.width), height: BaseData.labelPositionHeigth.rawValue))
+        lbTitle = UILabel.init(frame: CGRect.init(x: BaseData.positionXYcontentView.rawValue, y: BaseData.labelPositionY.rawValue, width: Double(screenSize.size.width), height: BaseData.labelPositionHeigth.rawValue))
 
         if let content = contentView {
             content.alpha = CGFloat(BaseData.alphaNum.rawValue)

@@ -8,14 +8,14 @@ enum StaticURL: String {
 
 //MARK: - Strings for cell identifier
 enum NameOfCells: String {
-    case viewControllerInformations = "LabelsTableViewCell"
+    case viewControllerInformation = "LabelsTableViewCell"
     case viewExperience = "experienceTableViewCell"
 
 }
 
 //MARK: - String for images
 enum NameOfImage: String {
-    case IMG_BACKGROUND_SCREEN = "background"
+    case imgBackgroundScreen = "background"
 }
 
 //MARK: - Values for tableview information
@@ -30,9 +30,7 @@ enum TableInformationViewData: Int {
 enum BaseData: Double {
     case alphaNum = 0.5
     case positionXYcontentView = 0.0
-    case labelPositionX = 16.0
     case labelPositionY = 34.0
-    case labelPositionWith = 343.0
     case labelPositionHeigth = 63.0
 }
 

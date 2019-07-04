@@ -8,7 +8,7 @@ extension InformationViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: NameOfCells.viewControllerInformations.rawValue, for: indexPath) as? LabelsTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NameOfCells.viewControllerInformation.rawValue, for: indexPath) as? LabelsTableViewCell
             else {
                 return UITableViewCell()
         }

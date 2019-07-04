@@ -14,8 +14,9 @@ final class ExperienceTableViewCell: UITableViewCell {
         self.lbRole?.text = infoExperience.role
         self.lbDescription?.text = infoExperience.descripcion
         
-        InfoHelper().downloadImg(urlImage: infoExperience.image) { [weak self] (response) in
-            switch response {
+        InfoHelper().getDownloadImg(urlImage: infoExperience.image) { [weak self] (response) in
+            switch response{
+
             case .success(let data):
                 DispatchQueue.main.async() { [weak self] in
                     self?.img?.image = UIImage(data: data)

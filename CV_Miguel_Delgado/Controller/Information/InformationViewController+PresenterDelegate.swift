@@ -21,7 +21,7 @@ extension InformationViewController: InformationPresenterDelegate {
         alert.addAction(UIAlertAction(title:
             NSLocalizedString(AlertError.accept.rawValue, comment: Comment.accept.rawValue), style: .default, handler: { action in
              self.activity.isHidden = false
-            self.presenterInformation?.myInformation()
+            self.presenterInformation?.setInformation()
         }))
         self.present(alert, animated: true)
     }
