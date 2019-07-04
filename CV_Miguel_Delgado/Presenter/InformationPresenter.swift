@@ -22,10 +22,10 @@ class InformationPresenter {
                 }
                 break
             case .fatal:
-                self.delegate?.errorInWebServices(error: AlertError.again.rawValue)
+                self.delegate?.errorInWebServices(error: NSLocalizedString(AlertError.again.rawValue, comment: ""))
                 break
             case .notFound:
-                self.delegate?.errorNotFound(error: AlertError.notInternet.rawValue)
+                self.delegate?.errorNotFound(error: NSLocalizedString(AlertError.notInternet.rawValue, comment: ""))
             }
         }
     }

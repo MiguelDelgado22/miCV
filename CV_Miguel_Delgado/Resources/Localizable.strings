@@ -10,12 +10,13 @@
 "failTest" = "Status test: fail!";
 "notConnection" = "No internet connection!";
 "unexpected" = "Unexpected error!";
+"again" = "Repeat";
 
 
 //MARK: - Strings for alerts
 "error" = "Error!";
 "ok" = "OK";
-"repeat" =  "Please try again";
+"Please, try again." =  "Please try again.";
 
 //MARK: - Strings for titles
 "experience" = "Experience";
