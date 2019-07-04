@@ -9,6 +9,12 @@
 import Foundation
 
 class InfoHelper: NSObject {
+    private let service: ApiService
+    
+    init(_ service: ApiService = ApiService()) {
+        self.service = service
+    }
+    
     // MARK: My info method
     /**
      Get a DownloadResult
@@ -17,7 +23,7 @@ class InfoHelper: NSObject {
      - completionHandler: A closure that need be defined by the caller to manipulate the data
      */
     func myInfo(completionHandler: @escaping(ApiServiceState) -> Void) {
-        ApiService().makeRequest { (response) in
+        service.makeRequest { (response) in
             switch response {
             case .success(let data):
                 completionHandler(.success(data:data))
@@ -28,7 +34,7 @@ class InfoHelper: NSObject {
     }
     
     func downloadImg(urlImage: String, completionHandler: @escaping(ApiServiceState) -> Void){
-        ApiService().makeRequest(from: urlImage) { (response) in
+        service.makeRequest(from: urlImage) { (response) in
             switch response {
             case .success(let data):
                 completionHandler(.success(data:data))
