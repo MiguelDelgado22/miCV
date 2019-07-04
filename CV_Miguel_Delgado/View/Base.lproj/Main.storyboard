@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yKp-Pp-wqi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yKp-Pp-wqi">
                                 <rect key="frame" x="8" y="193" width="303" height="325"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,6 +55,9 @@
                                     <constraint firstItem="p9y-YT-hf0" firstAttribute="centerX" secondItem="XJ9-kk-gu9" secondAttribute="centerX" id="pBM-tU-54t"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="wXf-VM-Vl2">
+                                <rect key="frame" x="150" y="274" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -64,6 +67,8 @@
                             <constraint firstItem="x7r-UJ-ycH" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="aqZ-rJ-r81"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="XJ9-kk-gu9" secondAttribute="bottom" id="baP-OM-3ZZ"/>
                             <constraint firstItem="x7r-UJ-ycH" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="16" id="duq-sH-yha"/>
+                            <constraint firstItem="wXf-VM-Vl2" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="l3D-bn-wEP"/>
+                            <constraint firstItem="wXf-VM-Vl2" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="qBn-LO-0Qv"/>
                             <constraint firstItem="yKp-Pp-wqi" firstAttribute="top" secondItem="x7r-UJ-ycH" secondAttribute="bottom" constant="8" id="rJb-lW-pVd"/>
                             <constraint firstItem="yKp-Pp-wqi" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="8" id="ujv-Fx-aVb"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="XJ9-kk-gu9" secondAttribute="trailing" id="zGh-Ny-PxB"/>
@@ -72,6 +77,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="sNX-Cx-Cyf"/>
                     <connections>
+                        <outlet property="activity" destination="wXf-VM-Vl2" id="lfK-Gz-oAb"/>
                         <outlet property="imgPhoto" destination="x7r-UJ-ycH" id="ZhV-b9-auI"/>
                         <outlet property="tbContainer" destination="yKp-Pp-wqi" id="NWY-gS-joX"/>
                     </connections>

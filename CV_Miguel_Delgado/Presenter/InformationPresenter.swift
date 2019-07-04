@@ -21,7 +21,7 @@ class InformationPresenter {
                     self.delegate?.informationPersonal(response: myInfo)
                 }
             case .fatal:
-                self.delegate?.errorInWebServices(error: AlertError.again.rawValue)
+                self.delegate?.errorInWebServices(error: AlertError.notInternet.rawValue)
             }
         }
     }
