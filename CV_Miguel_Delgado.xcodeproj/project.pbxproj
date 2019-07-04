@@ -11,7 +11,7 @@
 		36E8C80222CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80122CD4F2B00DF7891 /* ProtocolsInformationPresenter.swift */; };
 		36E8C80422CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80322CD4F4500DF7891 /* ProtocolsExperiencePresenter.swift */; };
 		36E8C80A22CD517D00DF7891 /* MockingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8C80922CD517D00DF7891 /* MockingProtocols.swift */; };
-		36E8C80B22CD524800DF7891 /* MockConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564822C6B78B005CC59D /* MockConnection.swift */; };
+		C75484B922CD781000C66A6B /* MockConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD564822C6B78B005CC59D /* MockConnection.swift */; };
 		C76B17DC22C3E9CF00D8D2CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B17DB22C3E9CF00D8D2CD /* AppDelegate.swift */; };
 		C76B17E322C3E9CF00D8D2CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B17E122C3E9CF00D8D2CD /* Main.storyboard */; };
 		C76B17E522C3E9CF00D8D2CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B17E422C3E9CF00D8D2CD /* Assets.xcassets */; };
@@ -530,7 +530,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7FD562322C56477005CC59D /* CV_Miguel_DelgadoTests.swift in Sources */,
-				36E8C80B22CD524800DF7891 /* MockConnection.swift in Sources */,
+				C75484B922CD781000C66A6B /* MockConnection.swift in Sources */,
 				36E8C80A22CD517D00DF7891 /* MockingProtocols.swift in Sources */,
 				C7FD564F22C6BE72005CC59D /* MockConnectionTest.swift in Sources */,
 			);

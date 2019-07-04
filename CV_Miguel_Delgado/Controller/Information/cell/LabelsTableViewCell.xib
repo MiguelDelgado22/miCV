@@ -21,6 +21,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3H-Os-MnW">
                         <rect key="frame" x="11" y="5" width="308" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="lbName"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Jg6-Yw-kcl"/>
                         </constraints>
@@ -30,6 +31,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGX-J2-DVC">
                         <rect key="frame" x="11" y="34" width="308" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="lbCity"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="dVV-xk-u80"/>
                         </constraints>
@@ -39,6 +41,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TelephonNume" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lg4-Xl-tvP">
                         <rect key="frame" x="11" y="63" width="308" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="lbNumber"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="dfl-D9-mCh"/>
                         </constraints>
@@ -48,6 +51,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8j-N6-lrB">
                         <rect key="frame" x="11" y="92" width="308" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="lbEmail"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="BE9-vp-d2g"/>
                         </constraints>
@@ -57,6 +61,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bithday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzQ-wf-QGq">
                         <rect key="frame" x="11" y="121" width="308" height="21"/>
+                        <accessibility key="accessibilityConfiguration" identifier="lbBirthday"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="awb-ho-Arl"/>
                         </constraints>
@@ -66,6 +71,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objective" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-nV-aEi">
                         <rect key="frame" x="11" y="150" width="308" height="77"/>
+                        <accessibility key="accessibilityConfiguration" identifier="lbObjective"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
