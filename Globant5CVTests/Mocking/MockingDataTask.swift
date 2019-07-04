@@ -1,7 +1,7 @@
 
 import Foundation
 
-@testable import CV_Miguel_Delgado
+@testable import Globant5CV
 
 class MockingDataTask: URLSessionDataTask {
     var completionHandler: (Data?, URLResponse?, Error?) -> Void

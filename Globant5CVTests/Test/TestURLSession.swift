@@ -1,6 +1,6 @@
 
 import XCTest
-@testable import CV_Miguel_Delgado
+@testable import Globant5CV
 
 class TestURLSession: XCTestCase, TestingJSON {
     //MARK: - Testing for URLSession

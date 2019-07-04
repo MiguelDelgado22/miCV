@@ -35,7 +35,7 @@
 		C76B182E22C425C500D8D2CD /* experienceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76B182C22C425C500D8D2CD /* experienceTableViewCell.xib */; };
 		C76B183322C42E4700D8D2CD /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C76B183222C42E4700D8D2CD /* Readme.md */; };
 		C76B183622C4859A00D8D2CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B183522C4859A00D8D2CD /* BaseViewController.swift */; };
-		C7FD561522C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD561422C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift */; };
+		C7FD561522C55D24005CC59D /* Globant5CVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD561422C55D24005CC59D /* Globant5CVUITests.swift */; };
 		C7FD563922C5902A005CC59D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563822C5902A005CC59D /* ApiService.swift */; };
 		C7FD563B22C5D18C005CC59D /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563A22C5D18C005CC59D /* NetworkProtocols.swift */; };
 		C7FD564022C5EA74005CC59D /* InfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FD563F22C5EA74005CC59D /* InfoHelper.swift */; };
@@ -77,7 +77,7 @@
 		36E8C81622CD7E3F00DF7891 /* TestNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetwork.swift; sourceTree = "<group>"; };
 		36E8C81A22CD942B00DF7891 /* TestDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDecoding.swift; sourceTree = "<group>"; };
 		36E8C81C22CD94D900DF7891 /* TestURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestURLSession.swift; sourceTree = "<group>"; };
-		C76B17D822C3E9CF00D8D2CD /* CV_Miguel_Delgado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV_Miguel_Delgado.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76B17D822C3E9CF00D8D2CD /* Globant5CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Globant5CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B17DB22C3E9CF00D8D2CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B17E222C3E9CF00D8D2CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C76B17E422C3E9CF00D8D2CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,16 +96,14 @@
 		C76B182C22C425C500D8D2CD /* experienceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = experienceTableViewCell.xib; sourceTree = "<group>"; };
 		C76B183222C42E4700D8D2CD /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		C76B183522C4859A00D8D2CD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		C7FD561222C55D24005CC59D /* CV_Miguel_DelgadoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CV_Miguel_DelgadoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7FD561422C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_Miguel_DelgadoUITests.swift; sourceTree = "<group>"; };
+		C7FD561222C55D24005CC59D /* Globant5CVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Globant5CVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FD561422C55D24005CC59D /* Globant5CVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globant5CVUITests.swift; sourceTree = "<group>"; };
 		C7FD561622C55D24005CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7FD562022C56477005CC59D /* CV_Miguel_DelgadoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CV_Miguel_DelgadoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FD562022C56477005CC59D /* Globant5CVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Globant5CVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FD562422C56477005CC59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7FD563822C5902A005CC59D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		C7FD563A22C5D18C005CC59D /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
 		C7FD563F22C5EA74005CC59D /* InfoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHelper.swift; sourceTree = "<group>"; };
-		C7FD564622C6B665005CC59D /* MockConnectionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnectionTest.swift; sourceTree = "<group>"; };
-		C7FD564822C6B78B005CC59D /* MockConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockConnection.swift; sourceTree = "<group>"; };
 		DB05FF5522CD7C36000886AD /* NavigationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
 		DB05FF5E22CE73AA000886AD /* TestPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPresenter.swift; sourceTree = "<group>"; };
 		DB1D88A022CD2A92008E73AD /* ExtensionViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionViewController+UITableView.swift"; sourceTree = "<group>"; };
@@ -197,8 +195,6 @@
 		36E8C81E22CD9EF500DF7891 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				C7FD564822C6B78B005CC59D /* MockConnection.swift */,
-				C7FD564622C6B665005CC59D /* MockConnectionTest.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -207,9 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				C76B183222C42E4700D8D2CD /* Readme.md */,
-				C76B17DA22C3E9CF00D8D2CD /* CV_Miguel_Delgado */,
-				C7FD562122C56477005CC59D /* CV_Miguel_DelgadoTests */,
-				C7FD561322C55D24005CC59D /* CV_Miguel_DelgadoUITests */,
+				C76B17DA22C3E9CF00D8D2CD /* Globant5CV */,
+				C7FD562122C56477005CC59D /* Globant5CVTests */,
+				C7FD561322C55D24005CC59D /* Globant5CVUITests */,
 				C76B17D922C3E9CF00D8D2CD /* Products */,
 				36E8C81E22CD9EF500DF7891 /* Recovered References */,
 			);
@@ -218,14 +214,14 @@
 		C76B17D922C3E9CF00D8D2CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C76B17D822C3E9CF00D8D2CD /* CV_Miguel_Delgado.app */,
-				C7FD561222C55D24005CC59D /* CV_Miguel_DelgadoUITests.xctest */,
-				C7FD562022C56477005CC59D /* CV_Miguel_DelgadoTests.xctest */,
+				C76B17D822C3E9CF00D8D2CD /* Globant5CV.app */,
+				C7FD561222C55D24005CC59D /* Globant5CVUITests.xctest */,
+				C7FD562022C56477005CC59D /* Globant5CVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C76B17DA22C3E9CF00D8D2CD /* CV_Miguel_Delgado */ = {
+		C76B17DA22C3E9CF00D8D2CD /* Globant5CV */ = {
 			isa = PBXGroup;
 			children = (
 				C7FD563E22C5EA61005CC59D /* Helpers */,
@@ -242,7 +238,7 @@
 				C76B17E622C3E9CF00D8D2CD /* LaunchScreen.storyboard */,
 				C76B17E922C3E9CF00D8D2CD /* Info.plist */,
 			);
-			path = CV_Miguel_Delgado;
+			path = Globant5CV;
 			sourceTree = "<group>";
 		};
 		C76B17EF22C3EAF400D8D2CD /* Model */ = {
@@ -338,16 +334,16 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		C7FD561322C55D24005CC59D /* CV_Miguel_DelgadoUITests */ = {
+		C7FD561322C55D24005CC59D /* Globant5CVUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C7FD561422C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift */,
+				C7FD561422C55D24005CC59D /* Globant5CVUITests.swift */,
 				C7FD561622C55D24005CC59D /* Info.plist */,
 			);
-			path = CV_Miguel_DelgadoUITests;
+			path = Globant5CVUITests;
 			sourceTree = "<group>";
 		};
-		C7FD562122C56477005CC59D /* CV_Miguel_DelgadoTests */ = {
+		C7FD562122C56477005CC59D /* Globant5CVTests */ = {
 			isa = PBXGroup;
 			children = (
 				36E8C80722CD510D00DF7891 /* Sources */,
@@ -356,7 +352,7 @@
 				36E8C81522CD7DD100DF7891 /* Test */,
 				C7FD562422C56477005CC59D /* Info.plist */,
 			);
-			path = CV_Miguel_DelgadoTests;
+			path = Globant5CVTests;
 			sourceTree = "<group>";
 		};
 		C7FD563522C58858005CC59D /* Network */ = {
@@ -387,9 +383,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C76B17D722C3E9CF00D8D2CD /* CV_Miguel_Delgado */ = {
+		C76B17D722C3E9CF00D8D2CD /* Globant5CV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C76B17EC22C3E9CF00D8D2CD /* Build configuration list for PBXNativeTarget "CV_Miguel_Delgado" */;
+			buildConfigurationList = C76B17EC22C3E9CF00D8D2CD /* Build configuration list for PBXNativeTarget "Globant5CV" */;
 			buildPhases = (
 				C76B17D422C3E9CF00D8D2CD /* Sources */,
 				C76B17D522C3E9CF00D8D2CD /* Frameworks */,
@@ -399,14 +395,14 @@
 			);
 			dependencies = (
 			);
-			name = CV_Miguel_Delgado;
+			name = Globant5CV;
 			productName = CV_Miguel_Delgado;
-			productReference = C76B17D822C3E9CF00D8D2CD /* CV_Miguel_Delgado.app */;
+			productReference = C76B17D822C3E9CF00D8D2CD /* Globant5CV.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C7FD561122C55D24005CC59D /* CV_Miguel_DelgadoUITests */ = {
+		C7FD561122C55D24005CC59D /* Globant5CVUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7FD561B22C55D24005CC59D /* Build configuration list for PBXNativeTarget "CV_Miguel_DelgadoUITests" */;
+			buildConfigurationList = C7FD561B22C55D24005CC59D /* Build configuration list for PBXNativeTarget "Globant5CVUITests" */;
 			buildPhases = (
 				C7FD560E22C55D24005CC59D /* Sources */,
 				C7FD560F22C55D24005CC59D /* Frameworks */,
@@ -417,14 +413,14 @@
 			dependencies = (
 				C7FD561822C55D24005CC59D /* PBXTargetDependency */,
 			);
-			name = CV_Miguel_DelgadoUITests;
+			name = Globant5CVUITests;
 			productName = CV_Miguel_DelgadoUITests;
-			productReference = C7FD561222C55D24005CC59D /* CV_Miguel_DelgadoUITests.xctest */;
+			productReference = C7FD561222C55D24005CC59D /* Globant5CVUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		C7FD561F22C56477005CC59D /* CV_Miguel_DelgadoTests */ = {
+		C7FD561F22C56477005CC59D /* Globant5CVTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C7FD562722C56478005CC59D /* Build configuration list for PBXNativeTarget "CV_Miguel_DelgadoTests" */;
+			buildConfigurationList = C7FD562722C56478005CC59D /* Build configuration list for PBXNativeTarget "Globant5CVTests" */;
 			buildPhases = (
 				C7FD561C22C56477005CC59D /* Sources */,
 				C7FD561D22C56477005CC59D /* Frameworks */,
@@ -435,9 +431,9 @@
 			dependencies = (
 				C7FD562622C56477005CC59D /* PBXTargetDependency */,
 			);
-			name = CV_Miguel_DelgadoTests;
+			name = Globant5CVTests;
 			productName = CV_Miguel_DelgadoTests;
-			productReference = C7FD562022C56477005CC59D /* CV_Miguel_DelgadoTests.xctest */;
+			productReference = C7FD562022C56477005CC59D /* Globant5CVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -448,7 +444,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Miguel Angel Delgado Alcantara";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					C76B17D722C3E9CF00D8D2CD = {
 						CreatedOnToolsVersion = 10.1;
@@ -463,7 +459,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C76B17D322C3E9CF00D8D2CD /* Build configuration list for PBXProject "CV_Miguel_Delgado" */;
+			buildConfigurationList = C76B17D322C3E9CF00D8D2CD /* Build configuration list for PBXProject "Globant5CV" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -475,9 +471,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C76B17D722C3E9CF00D8D2CD /* CV_Miguel_Delgado */,
-				C7FD561122C55D24005CC59D /* CV_Miguel_DelgadoUITests */,
-				C7FD561F22C56477005CC59D /* CV_Miguel_DelgadoTests */,
+				C76B17D722C3E9CF00D8D2CD /* Globant5CV */,
+				C7FD561122C55D24005CC59D /* Globant5CVUITests */,
+				C7FD561F22C56477005CC59D /* Globant5CVTests */,
 			);
 		};
 /* End PBXProject section */
@@ -546,7 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7FD561522C55D24005CC59D /* CV_Miguel_DelgadoUITests.swift in Sources */,
+				C7FD561522C55D24005CC59D /* Globant5CVUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,12 +567,12 @@
 /* Begin PBXTargetDependency section */
 		C7FD561822C55D24005CC59D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C76B17D722C3E9CF00D8D2CD /* CV_Miguel_Delgado */;
+			target = C76B17D722C3E9CF00D8D2CD /* Globant5CV */;
 			targetProxy = C7FD561722C55D24005CC59D /* PBXContainerItemProxy */;
 		};
 		C7FD562622C56477005CC59D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C76B17D722C3E9CF00D8D2CD /* CV_Miguel_Delgado */;
+			target = C76B17D722C3E9CF00D8D2CD /* Globant5CV */;
 			targetProxy = C7FD562522C56477005CC59D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -727,12 +723,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CV_Miguel_Delgado/Info.plist;
+				INFOPLIST_FILE = Globant5CV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miguel.CV-Miguel-Delgado";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Globant5CV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -745,12 +741,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CV_Miguel_Delgado/Info.plist;
+				INFOPLIST_FILE = Globant5CV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miguel.CV-Miguel-Delgado";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Globant5CV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -762,17 +758,17 @@
 			baseConfigurationReference = 36E8C7FE22CD47C500DF7891 /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CV_Miguel_DelgadoUITests/Info.plist;
+				INFOPLIST_FILE = Globant5CVUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miguel.CV-Miguel-DelgadoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Globant5CVUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CV_Miguel_Delgado;
+				TEST_TARGET_NAME = Globant5CV;
 			};
 			name = Debug;
 		};
@@ -781,17 +777,17 @@
 			baseConfigurationReference = 36E8C7FE22CD47C500DF7891 /* Config.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CV_Miguel_DelgadoUITests/Info.plist;
+				INFOPLIST_FILE = Globant5CVUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miguel.CV-Miguel-DelgadoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Globant5CVUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CV_Miguel_Delgado;
+				TEST_TARGET_NAME = Globant5CV;
 			};
 			name = Release;
 		};
@@ -801,17 +797,17 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CV_Miguel_DelgadoTests/Info.plist;
+				INFOPLIST_FILE = Globant5CVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miguel.CV-Miguel-DelgadoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Globant5CVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CV_Miguel_Delgado.app/CV_Miguel_Delgado";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Globant5CV.app/Globant5CV";
 			};
 			name = Debug;
 		};
@@ -821,24 +817,24 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CV_Miguel_DelgadoTests/Info.plist;
+				INFOPLIST_FILE = Globant5CVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "miguel.CV-Miguel-DelgadoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Globant5CVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CV_Miguel_Delgado.app/CV_Miguel_Delgado";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Globant5CV.app/Globant5CV";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C76B17D322C3E9CF00D8D2CD /* Build configuration list for PBXProject "CV_Miguel_Delgado" */ = {
+		C76B17D322C3E9CF00D8D2CD /* Build configuration list for PBXProject "Globant5CV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C76B17EA22C3E9CF00D8D2CD /* Debug */,
@@ -847,7 +843,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C76B17EC22C3E9CF00D8D2CD /* Build configuration list for PBXNativeTarget "CV_Miguel_Delgado" */ = {
+		C76B17EC22C3E9CF00D8D2CD /* Build configuration list for PBXNativeTarget "Globant5CV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C76B17ED22C3E9CF00D8D2CD /* Debug */,
@@ -856,7 +852,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7FD561B22C55D24005CC59D /* Build configuration list for PBXNativeTarget "CV_Miguel_DelgadoUITests" */ = {
+		C7FD561B22C55D24005CC59D /* Build configuration list for PBXNativeTarget "Globant5CVUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7FD561922C55D24005CC59D /* Debug */,
@@ -865,7 +861,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C7FD562722C56478005CC59D /* Build configuration list for PBXNativeTarget "CV_Miguel_DelgadoTests" */ = {
+		C7FD562722C56478005CC59D /* Build configuration list for PBXNativeTarget "Globant5CVTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7FD562822C56478005CC59D /* Debug */,
