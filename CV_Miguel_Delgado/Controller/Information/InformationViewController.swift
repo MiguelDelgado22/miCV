@@ -11,7 +11,8 @@ import UIKit
 class InformationViewController: BaseViewController {
     @IBOutlet weak var imgPhoto: UIImageView?
     @IBOutlet weak var tbContainer: UITableView?
-
+    @IBOutlet weak var activity: UIActivityIndicatorView!
+    
     var presenterInformation: InformationPresenter? {
         didSet {
             presenterInformation?.delegate = self
@@ -28,6 +29,7 @@ class InformationViewController: BaseViewController {
     }
     
     private func configureTableView(_ tableView: UITableView?) {
+        activity.startAnimating()
         guard let tableView = tableView else {
             return
         }
