@@ -8,21 +8,20 @@ extension ExperienceViewController: UITableViewDelegate  {
 
 extension ExperienceViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenterExperience?.infoExperience?.count ?? TableInformationViewData.numeroOfOptional.rawValue
+        return presenterExperience?.experienceAmount ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NameOfCells.viewExperience.rawValue, for: indexPath) as?  ExperienceTableViewCell,
-            let experience = presenterExperience?.infoExperience?[indexPath.row]
+            let experience = presenterExperience?.getExperience(at: indexPath.row)
         else {
             return UITableViewCell()
         }
+        
         cell.updateUI(infoExperience: experience)
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.backgroundColor = UIColor.clear
         
         return cell
     }
-    
-    
 }

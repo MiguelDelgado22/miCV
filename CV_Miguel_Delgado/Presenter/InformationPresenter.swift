@@ -10,14 +10,15 @@ import Foundation
 
 class InformationPresenter {
     weak var delegate: InformationPresenterDelegate?
-    var responseInfo: InformationResponseModel?
+    private var responseInfo: InformationResponseModel?
     
     func myInformation() {
         InfoHelper().myInfo { (responseData) in
             switch responseData {
             case .success(let dataResponse):
-                if let myInfo = try? JSONDecoder().decode(InformationResponseModel.self, from: dataResponse){
-                 self.delegate?.informationPersonal(response: myInfo)
+                if let myInfo = try? JSONDecoder().decode(InformationResponseModel.self, from: dataResponse) {
+                    self.responseInfo = myInfo
+                    self.delegate?.informationPersonal(response: myInfo)
                 }
                 break
             case .fatal:
@@ -27,5 +28,9 @@ class InformationPresenter {
                 self.delegate?.errorNotFound(error: AlertError.notInternet.rawValue)
             }
         }
+    }
+    
+    func getInformation() -> InformationResponseModel? {
+        return responseInfo
     }
 }

@@ -111,7 +111,7 @@
         <!--Infomation-->
         <scene sceneID="R9P-uD-fIi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fWb-kp-jTU" customClass="NavigationController" customModule="CV_Miguel_Delgado" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fWb-kp-jTU" customClass="NavigationController" customModule="CV_Miguel_Delgado" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Infomation" image="avatar" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wkf-vo-XCh">

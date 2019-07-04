@@ -13,7 +13,7 @@ extension InformationViewController: UITableViewDataSource {
                 return UITableViewCell()
         }
 
-        cell.updateUI(responseInformation: presenterInformation?.responseInfo)
+        cell.updateUI(responseInformation: presenterInformation?.getInformation())
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.backgroundColor = UIColor.clear
         

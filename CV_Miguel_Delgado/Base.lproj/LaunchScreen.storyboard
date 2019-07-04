@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen" translatesAutoresizingMaskIntoConstraints="NO" id="c8E-4t-gsH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c8E-4t-gsH" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="UWQ-sc-6jq"/>
-                            <constraint firstItem="c8E-4t-gsH" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eQf-No-oCF"/>
+                            <constraint firstItem="c8E-4t-gsH" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="bottom" id="eQf-No-oCF"/>
                             <constraint firstItem="c8E-4t-gsH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hzR-MI-F4H"/>
                             <constraint firstItem="c8E-4t-gsH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wF7-aV-LFn"/>
                         </constraints>

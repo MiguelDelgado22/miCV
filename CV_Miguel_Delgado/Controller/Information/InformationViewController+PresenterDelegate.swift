@@ -11,7 +11,6 @@ extension InformationViewController: InformationPresenterDelegate {
     }
     
     func informationPersonal(response: InformationResponseModel) {
-        presenterInformation?.responseInfo = response
         DispatchQueue.main.async {
             self.tbContainer?.reloadData()
         }

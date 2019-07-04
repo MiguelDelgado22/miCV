@@ -23,15 +23,18 @@ class InformationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let tbContainer = tbContainer else {
+        configureTableView(tbContainer)
+        navigationItem.title = NSLocalizedString(Title.information.rawValue, comment: "")
+    }
+    
+    private func configureTableView(_ tableView: UITableView?) {
+        guard let tableView = tableView else {
             return
         }
         
-        tbContainer.register(UINib(nibName: NameOfCells.viewControllerInformations.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformations.rawValue )
-        tbContainer.delegate = self
-        tbContainer.dataSource = self
-        
-        navigationItem.title = NSLocalizedString(Title.information.rawValue, comment: "")
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: NameOfCells.viewControllerInformations.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformations.rawValue )
     }
 }
 
