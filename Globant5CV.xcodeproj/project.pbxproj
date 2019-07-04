@@ -768,7 +768,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CV_Miguel_Delgado;
+				TEST_TARGET_NAME = Globant5CV;
 			};
 			name = Debug;
 		};
@@ -787,7 +787,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CV_Miguel_Delgado;
+				TEST_TARGET_NAME = Globant5CV;
 			};
 			name = Release;
 		};
