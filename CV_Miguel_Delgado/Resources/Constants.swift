@@ -51,19 +51,13 @@ enum SizeFont: Double {
 //MARK: - Status for api service
 enum ApiServiceState {
     case fatal(error: Error)
-    case success(response: Data)
+    case success(data: Data)
 }
 
 //MARK: - Values for http status code response
 enum HttpStatusCode: Int {
     case OK = 200
     case OKFULL = 300
-}
-
-//MARK: - Status for download result
-enum DownloadResult {
-    case success(data: Data)
-    case fatal(error: Error)
 }
 
 //MARK: - Strings for alert controller
@@ -80,10 +74,12 @@ enum Title: String {
     case experience = "experience"
 }
 
-//MARK: - Strings for network errors
-enum NetworkError: String {
-    case notConnection = "notConnection"
-    case unexpected = "unexpected"
+//MARK: Enum network error handler
+enum ApiServiceError: Error {
+    case uncategorized
+    case badUrl
+    case noData
+    case noResponse
 }
 
 //MARK: - Get strings from xconfig files
