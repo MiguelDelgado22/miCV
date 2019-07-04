@@ -1,6 +1,6 @@
 # Curriculum Vitae
 
-The purpose of develop this app was complete a code challenge. This app shown [Miguel Delgado](https://github.com/MiguelDelgado22) resume and his iOS developer experience.
+The purpose of develop this app was complete a code challenge. This app shows [Globant5] resume andmy iOS developer experience.
 
 Taken list-detail flow as flow base, I show a short summary about me and my iOS developer career. At the first view you might see my personal information and some ways put on contact with me.
 
