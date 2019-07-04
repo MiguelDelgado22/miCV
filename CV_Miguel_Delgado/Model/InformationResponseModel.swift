@@ -9,7 +9,6 @@
 import Foundation
 
 struct InformationResponseModel: Codable {
-
     var name: String = ""
     var city: String = ""
     var telephoneNumber: String = ""

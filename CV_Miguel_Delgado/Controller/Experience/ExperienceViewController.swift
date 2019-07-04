@@ -9,27 +9,29 @@
 import UIKit
 
 class ExperienceViewController: BaseViewController {
-
     @IBOutlet weak var tbContenedor: UITableView?
     var presenterExperience: ExperiencePresenter? {
         didSet {
-            self.presenterExperience?.infoExperience = (self.navigationController?.viewControllers.first as? InformationViewController)?.presenterInformation?.responseInfo?.experience
+            self.presenterExperience?.setExperience((self.navigationController?.viewControllers.first as? InformationViewController)?.presenterInformation?.getInformation()?.experience)
             self.tbContenedor?.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       guard let tbcontenedor = tbContenedor else {
+        self.configureTableView(tbContenedor)
+        
+        navigationItem.title = NSLocalizedString(Title.experience.rawValue, comment: "")
+    }
+    
+    func configureTableView(_ tableView: UITableView?) {
+        guard let tableView = tableView else {
             return
         }
         
-        tbcontenedor.register(UINib(nibName: NameOfCells.viewExperience.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewExperience.rawValue )
-        
-        tbcontenedor.delegate = self
-        tbcontenedor.dataSource = self
-    navigationItem.title = NSLocalizedString(Title.experience.rawValue, comment: "")
-        
-
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: NameOfCells.viewExperience.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewExperience.rawValue )
     }
 }
+
