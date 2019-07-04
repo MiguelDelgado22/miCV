@@ -25,6 +25,7 @@
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyImage" translatesAutoresizingMaskIntoConstraints="NO" id="x7r-UJ-ycH">
                                 <rect key="frame" x="110" y="80" width="100" height="105"/>
+                                <accessibility key="accessibilityConfiguration" identifier="imagePerfil"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="5Sr-E9-V1b"/>
                                     <constraint firstAttribute="height" constant="105" id="xuU-3x-4Wb"/>
@@ -35,6 +36,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9y-YT-hf0">
                                         <rect key="frame" x="111.5" y="7" width="97" height="36"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btoExperience"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <state key="normal" title="Experience"/>
                                         <connections>
