@@ -16,7 +16,7 @@ class InfoHelper: NSObject {
      - parameters:
      - completionHandler: A closure that need be defined by the caller to manipulate the data
      */
-    func myInfo(completionHandler: @escaping(DownloadResult) -> Void) {
+    func myInfo(completionHandler: @escaping(ApiServiceState) -> Void) {
         ApiService().makeRequest { (response) in
             switch response {
             case .success(let data):
@@ -27,7 +27,7 @@ class InfoHelper: NSObject {
         }
     }
     
-    func downloadImg(urlImage: String, completionHandler: @escaping(DownloadResult) -> Void){
+    func downloadImg(urlImage: String, completionHandler: @escaping(ApiServiceState) -> Void){
         ApiService().makeRequest(from: urlImage) { (response) in
             switch response {
             case .success(let data):

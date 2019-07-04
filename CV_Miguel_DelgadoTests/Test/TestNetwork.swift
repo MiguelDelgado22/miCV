@@ -9,7 +9,7 @@
 import XCTest
 @testable import CV_Miguel_Delgado
 
-class TestNetwork: XCTestCase {
+class TestNetwork: XCTestCase, TestingJSON {
     //MARK: - Testing networking layer
     func testValidURLRequest() {
         let service: ApiService
@@ -17,6 +17,7 @@ class TestNetwork: XCTestCase {
         guard let url = URL(string: validURL) else { return }
         
         let session = MockingSession()
+        session.data = dataFromJSON(file: "information")
         session.response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
         
         let expectation = XCTestExpectation(description: "Request service valid URL")
@@ -24,11 +25,10 @@ class TestNetwork: XCTestCase {
         
         service.makeRequest(from: validURL) { (response) in
             switch response {
-            case .success(response: _):
+            case .success(data: _):
                 expectation.fulfill()
             case .fatal(error: _):
                 XCTFail()
-                expectation.fulfill()
             }
         }
         wait(for: [expectation], timeout: 5)
@@ -49,10 +49,8 @@ class TestNetwork: XCTestCase {
             switch response {
             case .fatal(error: _):
                 expectation.fulfill()
-            case .success(response: _):
-                XCTFail()
-                expectation.fulfill()
-            }
+            case .success(data: _):
+                XCTFail()            }
         }
         wait(for: [expectation], timeout: 5)
     }
@@ -72,9 +70,8 @@ class TestNetwork: XCTestCase {
             switch response {
             case .fatal(error: _):
                 expectation.fulfill()
-            case .success(response: _):
+            case .success(data: _):
                 XCTFail()
-                expectation.fulfill()
             }
         }
         wait(for: [expectation], timeout: 5)

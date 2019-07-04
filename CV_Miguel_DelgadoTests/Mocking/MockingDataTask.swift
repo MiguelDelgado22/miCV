@@ -15,4 +15,7 @@ class MockingDataTask: URLSessionDataTask {
     init(completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
         self.completionHandler = completionHandler
     }
+    
+    override func resume() {
+    }
 }
