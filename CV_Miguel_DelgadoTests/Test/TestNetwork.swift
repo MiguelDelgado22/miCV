@@ -20,7 +20,7 @@ class TestNetwork: XCTestCase, TestingJSON {
         session.data = dataFromJSON(file: "information")
         session.response = HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)
         
-        let expectation = XCTestExpectation(description: "Request service valid URL")
+        let expectation = XCTestExpectation(description: "Test request service valid URL")
         service = ApiService(session: session)
         
         service.makeRequest(from: validURL) { (response) in
@@ -42,7 +42,7 @@ class TestNetwork: XCTestCase, TestingJSON {
         let session = MockingSession()
         session.response = HTTPURLResponse(url: url, statusCode: 400, httpVersion: nil, headerFields: nil)
         
-        let expectation = XCTestExpectation(description: "Request service invalid URL")
+        let expectation = XCTestExpectation(description: "Test request service invalid URL")
         service = ApiService(session: session)
         
         service.makeRequest(from: invalidURL) { (response) in
@@ -63,7 +63,7 @@ class TestNetwork: XCTestCase, TestingJSON {
         let session = MockingSession()
         session.response = HTTPURLResponse(url: url, statusCode: 0, httpVersion: nil, headerFields: nil)
         
-        let expectation = XCTestExpectation(description: "Request service no internet connection")
+        let expectation = XCTestExpectation(description: "Test request service no internet connection")
         service = ApiService(session: session)
         
         service.makeRequest(from: validURL) { (response) in

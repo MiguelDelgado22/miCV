@@ -18,7 +18,7 @@ class TestURLSession: XCTestCase, TestingJSON {
         session.response = HTTPURLResponse(url: URL(fileURLWithPath: "information.json"), statusCode: 200, httpVersion: nil, headerFields: nil)
         
         
-        let expectation = XCTestExpectation(description: "Loading sections correctly")
+        let expectation = XCTestExpectation(description: "Test a correct URLSession")
         service = ApiService(session: session)
         
         service.makeRequest { (response) in
@@ -33,7 +33,6 @@ class TestURLSession: XCTestCase, TestingJSON {
         wait(for: [expectation], timeout: 5)
     }
     
-    //MARK: - Testing for URLSession
     func testNetworkingSessionFailureDataNil() {
         let service: ApiService
         let session = MockingSession()
@@ -41,7 +40,7 @@ class TestURLSession: XCTestCase, TestingJSON {
         session.response = HTTPURLResponse(url: URL(fileURLWithPath: "information.json"), statusCode: 200, httpVersion: nil, headerFields: nil)
         
         
-        let expectation = XCTestExpectation(description: "Loading sections correctly")
+        let expectation = XCTestExpectation(description: "Test a incorrect URLSession with data nil")
         service = ApiService(session: session)
         
         service.makeRequest { (response) in
@@ -55,7 +54,6 @@ class TestURLSession: XCTestCase, TestingJSON {
         wait(for: [expectation], timeout: 5)
     }
     
-    //MARK: - Testing for URLSession
     func testNetworkingSessionFailureBadURL() {
         let service: ApiService
         let session = MockingSession()
@@ -63,7 +61,25 @@ class TestURLSession: XCTestCase, TestingJSON {
         session.response = HTTPURLResponse(url: URL(fileURLWithPath: "badURL.json"), statusCode: 404, httpVersion: nil, headerFields: nil)
         
         
-        let expectation = XCTestExpectation(description: "Loading sections correctly")
+        let expectation = XCTestExpectation(description: "Test a incorrect URLSession with an invalid URL")
+        service = ApiService(session: session)
+        
+        service.makeRequest { (response) in
+            switch response {
+            case .success(data: _):
+                XCTFail()
+            case .fatal(error: _):
+                expectation.fulfill()
+            }
+        }
+        wait(for: [expectation], timeout: 5)
+    }
+    
+    func testNetworkingSessionFailureNoResponse() {
+        let service: ApiService
+        let session = MockingSession()
+        
+        let expectation = XCTestExpectation(description: "Test a incorrect URLSession without response")
         service = ApiService(session: session)
         
         service.makeRequest { (response) in
