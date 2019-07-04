@@ -1,3 +1,4 @@
+
 import UIKit
 
 class ExperienceViewController: BaseViewController {
@@ -15,7 +16,7 @@ class ExperienceViewController: BaseViewController {
         navigationItem.title = NSLocalizedString(Title.experience.rawValue, comment: "")
     }
     
-    func configureTableView(_ tableView: UITableView?) {
+    private func configureTableView(_ tableView: UITableView?) {
         guard let tableView = tableView else {
             return
         }

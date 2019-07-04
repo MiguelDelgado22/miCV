@@ -1,6 +1,7 @@
+
 import Foundation
 
-class NavigationPresenter {
+final class NavigationPresenter {
     func createExperiencePresenter(from presenter: InformationPresenter?) -> ExperiencePresenter {
         guard let presenter = presenter else {
             return ExperiencePresenter()

@@ -1,10 +1,10 @@
+
 import UIKit
 
-class InformationViewController: BaseViewController {
+final class InformationViewController: BaseViewController {
     @IBOutlet weak var imgPhoto: UIImageView?
     @IBOutlet weak var tbContainer: UITableView?
     @IBOutlet weak var activity: UIActivityIndicatorView!
-    
     var presenterInformation: InformationPresenter? {
         didSet {
             presenterInformation?.delegate = self
@@ -21,11 +21,10 @@ class InformationViewController: BaseViewController {
     }
     
     private func configureTableView(_ tableView: UITableView?) {
-        activity.startAnimating()
         guard let tableView = tableView else {
             return
         }
-        
+        activity.startAnimating()   
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: NameOfCells.viewControllerInformations.rawValue, bundle: nil), forCellReuseIdentifier: NameOfCells.viewControllerInformations.rawValue )

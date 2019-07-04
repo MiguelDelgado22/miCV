@@ -1,3 +1,4 @@
+
 import Foundation
 
 //MARK: - Enum for mocking URLs

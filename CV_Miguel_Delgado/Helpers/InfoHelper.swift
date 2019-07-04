@@ -1,6 +1,7 @@
+
 import Foundation
 
-class InfoHelper: NSObject {
+final class InfoHelper: NSObject {
     private let service: ApiService
     
     init(_ service: ApiService = ApiService()) {

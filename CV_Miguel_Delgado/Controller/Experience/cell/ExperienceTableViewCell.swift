@@ -1,7 +1,7 @@
+
 import UIKit
 
-class ExperienceTableViewCell: UITableViewCell {
-
+final class ExperienceTableViewCell: UITableViewCell {
     @IBOutlet weak var lbName: UILabel?
     @IBOutlet weak var lbDate: UILabel?
     @IBOutlet weak var lbRole: UILabel?
@@ -14,11 +14,11 @@ class ExperienceTableViewCell: UITableViewCell {
         self.lbRole?.text = infoExperience.role
         self.lbDescription?.text = infoExperience.descripcion
         
-        InfoHelper().downloadImg(urlImage: infoExperience.image) { (response) in
-            switch response{
+        InfoHelper().downloadImg(urlImage: infoExperience.image) { [weak self] (response) in
+            switch response {
             case .success(let data):
-                DispatchQueue.main.async() {
-                    self.img?.image = UIImage(data: data)
+                DispatchQueue.main.async() { [weak self] in
+                    self?.img?.image = UIImage(data: data)
                 }
                 break
             default:

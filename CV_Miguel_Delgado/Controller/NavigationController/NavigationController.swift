@@ -1,6 +1,7 @@
+
 import UIKit
 
-class NavigationController: UINavigationController {
+final class NavigationController: UINavigationController {
     var presenterNavigation: NavigationPresenter?
 
     override func viewDidLoad() {
