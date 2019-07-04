@@ -12,7 +12,6 @@ class ExperienceViewController: BaseViewController {
     @IBOutlet weak var tbContenedor: UITableView?
     var presenterExperience: ExperiencePresenter? {
         didSet {
-            self.presenterExperience?.setExperience((self.navigationController?.viewControllers.first as? InformationViewController)?.presenterInformation?.getInformation()?.experience)
             self.tbContenedor?.reloadData()
         }
     }

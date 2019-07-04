@@ -261,7 +261,7 @@
 		C76B17F122C3EB1300D8D2CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DBFF1C6D22CD628E00116CAF /* NavigationConntroller */,
+				DBFF1C6D22CD628E00116CAF /* NavigationController */,
 				C76B17F222C3EEC000D8D2CD /* Information */,
 				C76B182422C4228200D8D2CD /* Experience */,
 			);
@@ -373,12 +373,12 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		DBFF1C6D22CD628E00116CAF /* NavigationConntroller */ = {
+		DBFF1C6D22CD628E00116CAF /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
 				DBFF1C6E22CD62BD00116CAF /* NavigationController.swift */,
 			);
-			path = NavigationConntroller;
+			path = NavigationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
