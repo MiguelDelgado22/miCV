@@ -1,11 +1,3 @@
-//
-//  TestDecoding.swift
-//  CV_Miguel_DelgadoTests
-//
-//  Created by Fernando De La Rosa Salas on 7/3/19.
-//  Copyright © 2019 Miguel Angel Delgado Alcantara. All rights reserved.
-//
-
 import XCTest
 @testable import CV_Miguel_Delgado
 
